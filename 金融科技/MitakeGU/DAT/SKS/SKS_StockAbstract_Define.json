@@ -1,0 +1,4115 @@
+{
+    "Timestamp": "20200821162720",
+    "PageContents": [
+        {
+            "PageName": "籌碼",
+            "GroupList": [
+                {
+                    "GroupID": "1",
+                    "GroupName": "外資買賣超排行",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "1",
+                    "MainAbstract_SubID": "3"
+                },
+                {
+                    "GroupID": "2",
+                    "GroupName": "外資買賣超",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "64",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "3",
+                    "GroupName": "投信買賣超排行",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "3",
+                    "MainAbstract_SubID": "3"
+                },
+                {
+                    "GroupID": "4",
+                    "GroupName": "投信買賣超",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "65",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "5",
+                    "GroupName": "自營商買賣超排行",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "5",
+                    "MainAbstract_SubID": "3"
+                },
+                {
+                    "GroupID": "6",
+                    "GroupName": "自營商買賣超",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "66",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "7",
+                    "GroupName": "400張以上集保佔比",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "9",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "8",
+                    "GroupName": "600張以上集保佔比",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "10",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "9",
+                    "GroupName": "800張以上集保佔比",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "11",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "10",
+                    "GroupName": "1000張以上集保佔比",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "12",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "11",
+                    "GroupName": "400張以下集保佔比",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "13",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "12",
+                    "GroupName": "200張以下集保佔比",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "14",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "13",
+                    "GroupName": "100張以下集保佔比",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "15",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "14",
+                    "GroupName": "董監事持股比例",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "55",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "15",
+                    "GroupName": "董監事質押比例",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "56",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "16",
+                    "GroupName": "內部人持股比例",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "57",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "17",
+                    "GroupName": "內部人質押比例",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "58",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "20",
+                    "GroupName": "融資使用率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "23",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "21",
+                    "GroupName": "融資變化量",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "24",
+                    "MainAbstract_SubID": "3"
+                },
+                {
+                    "GroupID": "22",
+                    "GroupName": "融券使用率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "25",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "23",
+                    "GroupName": "融券變化量",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "26",
+                    "MainAbstract_SubID": "3"
+                }
+            ]
+        },
+        {
+            "PageName": "財務",
+            "GroupList": [
+                {
+                    "GroupID": "24",
+                    "GroupName": "股本",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "67",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "25",
+                    "GroupName": "市值",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "68",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "26",
+                    "GroupName": "本益比",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "45",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "27",
+                    "GroupName": "股價淨值比",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "46",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "28",
+                    "GroupName": "股價營收比",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "33",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "29",
+                    "GroupName": "股價研發比",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "40",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "30",
+                    "GroupName": "現金股利",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "52",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "31",
+                    "GroupName": "現金股利發放率",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "53",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "32",
+                    "GroupName": "現金殖利率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "54",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "33",
+                    "GroupName": "資產報酬率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "41",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "34",
+                    "GroupName": "權益報酬率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "42",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "35",
+                    "GroupName": "每股盈餘EPS",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "43",
+                    "MainAbstract_SubID": "2"
+                },
+                {
+                    "GroupID": "36",
+                    "GroupName": "月營收",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "27",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "37",
+                    "GroupName": "營收於產業排名",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "31",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "38",
+                    "GroupName": "毛利率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "34",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "39",
+                    "GroupName": "毛利率於該產業排名",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "36",
+                    "MainAbstract_SubID": "6"
+                },
+                {
+                    "GroupID": "40",
+                    "GroupName": "營業利益率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "37",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "41",
+                    "GroupName": "稅後純益率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "39",
+                    "MainAbstract_SubID": "6"
+                },
+                {
+                    "GroupID": "42",
+                    "GroupName": "月營收成長率(MoM)",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "28",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "43",
+                    "GroupName": "月營收成長率(YoY)",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "29",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "44",
+                    "GroupName": "年營收成長率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "32",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "45",
+                    "GroupName": "季毛利成長率(YoY)",
+                    "DefaulDisplay": "0",
+                    "MainAbstract_ID": "35",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "46",
+                    "GroupName": "毛利成長率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "69",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "47",
+                    "GroupName": "營業利益成長率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "70",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "48",
+                    "GroupName": "稅前純益成長率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "71",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "49",
+                    "GroupName": "EPS成長率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "44",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "50",
+                    "GroupName": "負債比",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "47",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "51",
+                    "GroupName": "流動比率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "48",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "52",
+                    "GroupName": "速動比率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "49",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "53",
+                    "GroupName": "現金流量比率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "72",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "54",
+                    "GroupName": "自由現金流量",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "50",
+                    "MainAbstract_SubID": "1"
+                }
+            ]
+        },
+        {
+            "PageName": "技術",
+            "GroupList": [
+                {
+                    "GroupID": "55",
+                    "GroupName": "漲跌幅",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "59",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "56",
+                    "GroupName": "成交量",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "60",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "57",
+                    "GroupName": "成交值",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "61",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "58",
+                    "GroupName": "昨量比",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "62",
+                    "MainAbstract_SubID": "1"
+                },
+                {
+                    "GroupID": "59",
+                    "GroupName": "週轉率",
+                    "DefaulDisplay": "1",
+                    "MainAbstract_ID": "63",
+                    "MainAbstract_SubID": "1"
+                }
+            ]
+        }
+    ],
+    "Abstracts": [
+        {
+            "AbstractID": "73",
+            "SubID": "1",
+            "DefaultText": "外資連續買賣超",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資連續買超"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資連續賣超"
+                }
+            ],
+            "Format": "${val}天",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "74",
+            "SubID": "1",
+            "DefaultText": "投信連續買賣超",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信連續買超"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信連續賣超"
+                }
+            ],
+            "Format": "${val}天",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "75",
+            "SubID": "1",
+            "DefaultText": "自營商連續買賣超",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自營商連續買超"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "自營商連續賣超"
+                }
+            ],
+            "Format": "${val}天",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "76",
+            "SubID": "1",
+            "DefaultText": "外資過去連續買賣超",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資近三日內轉為賣方，之前連續買超"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資近三日內轉為買方，之前連續賣超"
+                }
+            ],
+            "Format": "${val}天",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "77",
+            "SubID": "1",
+            "DefaultText": "投信過去連續買賣超",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信近三日內轉為賣方，之前連續買超"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信近三日內轉為買方，之前連續賣超"
+                }
+            ],
+            "Format": "${val}天",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "78",
+            "SubID": "1",
+            "DefaultText": "外資持股比率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資持股比率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "79",
+            "SubID": "1",
+            "DefaultText": "投信持股比率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信持股比率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "6",
+            "DefaultText": "Top1賣超券商籌碼集中度(近1日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1賣超券商籌碼集中度(近1日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "7",
+            "DefaultText": "Top1賣超券商籌碼集中度(近3日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1賣超券商籌碼集中度(近3日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "8",
+            "DefaultText": "Top1賣超券商籌碼集中度(近5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1賣超券商籌碼集中度(近5日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "9",
+            "DefaultText": "Top1賣超券商籌碼集中度(近20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1賣超券商籌碼集中度(近20日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "10",
+            "DefaultText": "Top1賣超券商籌碼集中度(近60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1賣超券商籌碼集中度(近60日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "80",
+            "SubID": "1",
+            "DefaultText": "近一週融資使用率增減",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "近一週融資使用率增減"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "80",
+            "SubID": "2",
+            "DefaultText": "近一日融資使用率增減",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "近一日融資使用率增減"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "80",
+            "SubID": "3",
+            "DefaultText": "近三個月融資使用率增減",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "近三個月融資使用率增減"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "80",
+            "SubID": "4",
+            "DefaultText": "近一個月融資使用率增減",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "近一個月融資使用率增減"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "81",
+            "SubID": "1",
+            "DefaultText": "券資比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "券資比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "82",
+            "SubID": "1",
+            "DefaultText": "券資比排行",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "券資比排行"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "83",
+            "SubID": "1",
+            "DefaultText": "股本於產業排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "股本於產業排名"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "84",
+            "SubID": "1",
+            "DefaultText": "本業獲利率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "本業獲利率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "85",
+            "SubID": "1",
+            "DefaultText": "本年的營收成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "本年的營收成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "85",
+            "SubID": "2",
+            "DefaultText": "一年前的營收成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "一年前的營收成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "85",
+            "SubID": "3",
+            "DefaultText": "兩年前的營收成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "兩年前的營收成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "86",
+            "SubID": "1",
+            "DefaultText": "最新季營收",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "最新季營收"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "87",
+            "SubID": "1",
+            "DefaultText": "最新年營收",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "最新年營收"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "88",
+            "SubID": "1",
+            "DefaultText": "本年的毛利成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "本年的毛利成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "88",
+            "SubID": "2",
+            "DefaultText": "一年前的毛利成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "一年前的毛利成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "88",
+            "SubID": "3",
+            "DefaultText": "兩年前的毛利成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "兩年前的毛利成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "89",
+            "SubID": "1",
+            "DefaultText": "最新季毛利率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "最新季毛利率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "90",
+            "SubID": "1",
+            "DefaultText": "最新年毛利率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "最新年毛利率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "91",
+            "SubID": "1",
+            "DefaultText": "本年的EPS成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "本年的EPS成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "91",
+            "SubID": "2",
+            "DefaultText": "一年前的EPS成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "一年前的EPS成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "91",
+            "SubID": "3",
+            "DefaultText": "兩年前的EPS成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "兩年前的EPS成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "92",
+            "SubID": "1",
+            "DefaultText": "研發費用佔營收比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "研發費用佔營收比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "94",
+            "SubID": "1",
+            "DefaultText": "3日新高",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "3日新高"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "94",
+            "SubID": "2",
+            "DefaultText": "5日新高",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "5日新高"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "94",
+            "SubID": "3",
+            "DefaultText": "20日新高",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "20日新高"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "94",
+            "SubID": "4",
+            "DefaultText": "60日新高",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "60日新高"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "94",
+            "SubID": "5",
+            "DefaultText": "120日新高",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "120日新高"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "94",
+            "SubID": "6",
+            "DefaultText": "240日新高",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "240日新高"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "95",
+            "SubID": "1",
+            "DefaultText": "3日新低",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "3日新低"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "95",
+            "SubID": "2",
+            "DefaultText": "5日新低",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "5日新低"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "95",
+            "SubID": "3",
+            "DefaultText": "20日新低",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "20日新低"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "95",
+            "SubID": "4",
+            "DefaultText": "60日新低",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "60日新低"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "95",
+            "SubID": "5",
+            "DefaultText": "120日新低",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "120日新低"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "95",
+            "SubID": "6",
+            "DefaultText": "240日新低",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "240日新低"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "96",
+            "SubID": "1",
+            "DefaultText": "上關價",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "上關價"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "97",
+            "SubID": "1",
+            "DefaultText": "下關價",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "下關價"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "98",
+            "SubID": "1",
+            "DefaultText": "K線實體長度(比例)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "紅K實體大於"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "黑K實體大於"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "99",
+            "SubID": "1",
+            "DefaultText": "週線",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "週線"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "99",
+            "SubID": "2",
+            "DefaultText": "月線",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "月線"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "99",
+            "SubID": "3",
+            "DefaultText": "季線",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "季線"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "99",
+            "SubID": "4",
+            "DefaultText": "半年線",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "半年線"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "99",
+            "SubID": "5",
+            "DefaultText": "年線",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "年線"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "100",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "週線多頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "101",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "雙週線多頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "102",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "月線多頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "103",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "季線多頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "104",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "半年線多頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "105",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "年線多頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "106",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "週線空頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "107",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "雙週線空頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "108",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "月線空頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "109",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "季線空頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "110",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "半年線空頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "111",
+            "SubID": "1",
+            "DefaultText": "排名",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "年線空頭"
+                }
+            ],
+            "Format": "${val}名",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "112",
+            "SubID": "1",
+            "DefaultText": "急殺幅度",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "急殺幅度"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "93",
+            "SubID": "1",
+            "DefaultText": "急拉幅度",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "急拉幅度"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "1",
+            "SubID": "3",
+            "DefaultText": "外資買賣超排行\r\n(5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資買超排行\r\n(5日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資賣超排行\r\n(5日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "1",
+            "SubID": "1",
+            "DefaultText": "外資買賣超排行",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資買超排行"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資賣超排行"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "1",
+            "SubID": "4",
+            "DefaultText": "外資買賣超排行\r\n(20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資買超排行\r\n(20日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資賣超排行\r\n(20日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "1",
+            "SubID": "5",
+            "DefaultText": "外資買賣超排行\r\n(60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資買超排行\r\n(60日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資賣超排行\r\n(60日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "64",
+            "SubID": "1",
+            "DefaultText": "外資買賣超",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資買超"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資賣超"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "3000.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "64",
+            "SubID": "2",
+            "DefaultText": "外資買賣超\r\n(5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資買超\r\n(5日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資買超\r\n(5日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "64",
+            "SubID": "3",
+            "DefaultText": "外資買賣超\r\n(20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資買超\r\n(20日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資賣超\r\n(20日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "64",
+            "SubID": "4",
+            "DefaultText": "外資買賣超\r\n(60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "外資買超\r\n(60日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "外資賣超\r\n(60日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "3",
+            "SubID": "3",
+            "DefaultText": "投信買賣超排行\r\n(5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信買超排行\r\n(5日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信賣超排行\r\n(5日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "3",
+            "SubID": "1",
+            "DefaultText": "投信買賣超排行",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信買超排行"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信賣超排行"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "3",
+            "SubID": "4",
+            "DefaultText": "投信買賣超排行\r\n(20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信買超排行\r\n(20日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信賣超排行\r\n(20日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "3",
+            "SubID": "5",
+            "DefaultText": "投信買賣超排行\r\n(60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信買超排行\r\n(60日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信賣超排行\r\n(60日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "65",
+            "SubID": "1",
+            "DefaultText": "投信買賣超",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信買超"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信賣超"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "500.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "65",
+            "SubID": "2",
+            "DefaultText": "投信買賣超\r\n(5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信買超\r\n(5日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信賣超\r\n(5日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "65",
+            "SubID": "3",
+            "DefaultText": "投信買賣超\r\n(20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信買超\r\n(20日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信賣超\r\n(20日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "65",
+            "SubID": "4",
+            "DefaultText": "投信買賣超\r\n(60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "投信買超\r\n(60日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "投信賣超\r\n(60日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "5",
+            "SubID": "3",
+            "DefaultText": "自營商買賣超排行\r\n(5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自營商買超排行\r\n(5日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "自營商賣超排行\r\n(5日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "5",
+            "SubID": "1",
+            "DefaultText": "自營商買賣超排行",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自營商買超排行"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "自營商賣超排行"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "5",
+            "SubID": "4",
+            "DefaultText": "自營商買賣超排行\r\n(20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自營商買超排行\r\n(20日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "自營商賣超排行\r\n(20日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "5",
+            "SubID": "5",
+            "DefaultText": "自營商買賣超排行\r\n(60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自營商買超排行\r\n(60日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "自營商賣超排行\r\n(60日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "50.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "66",
+            "SubID": "1",
+            "DefaultText": "自營商買賣超",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自營商買超"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "自營商賣超"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "500.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "66",
+            "SubID": "2",
+            "DefaultText": "自營商買賣超\r\n(5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自營商買超\r\n(5日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "自營商賣超\r\n(5日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "66",
+            "SubID": "3",
+            "DefaultText": "自營商買賣超\r\n(20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自營商買超\r\n(20日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "自營商賣超\r\n(20日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "66",
+            "SubID": "4",
+            "DefaultText": "自營商買賣超\r\n(60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自營商買超\r\n(60日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "自營商賣超\r\n(60日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "9",
+            "SubID": "1",
+            "DefaultText": "400張以上\r\n集保佔比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "400張以上\r\n集保佔比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "45.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "16",
+            "SubID": "1",
+            "DefaultText": "較1週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較1週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較1週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "16",
+            "SubID": "2",
+            "DefaultText": "較4週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較3週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較3週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "16",
+            "SubID": "5",
+            "DefaultText": "較12週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較12週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較12週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "10",
+            "SubID": "1",
+            "DefaultText": "600張以上\r\n集保佔比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "600張以上\r\n集保佔比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "45.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "17",
+            "SubID": "1",
+            "DefaultText": "較1週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較1週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較1週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "17",
+            "SubID": "2",
+            "DefaultText": "較4週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較3週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較3週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "17",
+            "SubID": "5",
+            "DefaultText": "較12週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較12週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較12週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "11",
+            "SubID": "1",
+            "DefaultText": "800張以上\r\n集保佔比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "800張以上\r\n集保佔比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "45.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "18",
+            "SubID": "1",
+            "DefaultText": "較1週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較1週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較1週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "18",
+            "SubID": "2",
+            "DefaultText": "較4週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較3週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較3週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "18",
+            "SubID": "5",
+            "DefaultText": "較12週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較12週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較12週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "12",
+            "SubID": "1",
+            "DefaultText": "1000張以上\r\n集保佔比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "1000張以上\r\n集保佔比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "45.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "19",
+            "SubID": "1",
+            "DefaultText": "較1週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較1週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較1週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "19",
+            "SubID": "2",
+            "DefaultText": "較4週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較3週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較3週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "19",
+            "SubID": "5",
+            "DefaultText": "較12週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較12週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較12週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "13",
+            "SubID": "1",
+            "DefaultText": "400張以下\r\n集保佔比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "400張以下\r\n集保佔比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "20",
+            "SubID": "1",
+            "DefaultText": "較1週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較1週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較1週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "20",
+            "SubID": "2",
+            "DefaultText": "較4週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較3週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較3週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "20",
+            "SubID": "5",
+            "DefaultText": "較12週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較12週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較12週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "14",
+            "SubID": "1",
+            "DefaultText": "200張以下\r\n集保佔比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "200張以下\r\n集保佔比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "21",
+            "SubID": "1",
+            "DefaultText": "較1週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較1週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較1週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "21",
+            "SubID": "2",
+            "DefaultText": "較4週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較3週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較3週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "21",
+            "SubID": "5",
+            "DefaultText": "較12週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較12週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較12週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "15",
+            "SubID": "1",
+            "DefaultText": "100張以下\r\n集保佔比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "100張以下\r\n集保佔比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "22",
+            "SubID": "1",
+            "DefaultText": "較1週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較1週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較1週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "22",
+            "SubID": "2",
+            "DefaultText": "較4週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較3週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較3週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "22",
+            "SubID": "5",
+            "DefaultText": "較12週前",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "較12週前"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "較12週前"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "55",
+            "SubID": "1",
+            "DefaultText": "董監事持股比例",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "董監事持股比例"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "30.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "56",
+            "SubID": "1",
+            "DefaultText": "董監事質押比例",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "董監事質押比例"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "40.00",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "57",
+            "SubID": "1",
+            "DefaultText": "內部人持股比例",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "內部人持股比例"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "35.00",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "58",
+            "SubID": "1",
+            "DefaultText": "內部人質押比例",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "內部人質押比例"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "40.00",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "3",
+            "DefaultText": "Top1券商籌碼集中度(近5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1券商籌碼集中度(近5日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "1",
+            "DefaultText": "Top1券商籌碼集中度(近1日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1券商籌碼集中度(近1日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "2",
+            "DefaultText": "Top1券商籌碼集中度(近3日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1券商籌碼集中度(近3日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "4",
+            "DefaultText": "Top1券商籌碼集中度(近20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1券商籌碼集中度(近20日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "7",
+            "SubID": "5",
+            "DefaultText": "Top1券商籌碼集中度(近60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top1券商籌碼集中度(近60日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "8",
+            "SubID": "3",
+            "DefaultText": "Top15券商籌碼集中度(近5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top15券商籌碼集中度(近5日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "8",
+            "SubID": "1",
+            "DefaultText": "Top15券商籌碼集中度(近1日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top15券商籌碼集中度(近1日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "8",
+            "SubID": "4",
+            "DefaultText": "Top15券商籌碼集中度(近20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top15券商籌碼集中度(近20日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "8",
+            "SubID": "5",
+            "DefaultText": "Top15券商籌碼集中度(近60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "Top15券商籌碼集中度(近60日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "23",
+            "SubID": "1",
+            "DefaultText": "融資使用率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融資使用率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "15.00",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "24",
+            "SubID": "3",
+            "DefaultText": "融資變化量\r\n(一週)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融資變化量\r\n(一週)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "2500.00",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "24",
+            "SubID": "1",
+            "DefaultText": "融資變化量\r\n(昨日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融資變化量\r\n(昨日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "24",
+            "SubID": "5",
+            "DefaultText": "融資變化量\r\n(一個月)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融資變化量\r\n(一個月)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "24",
+            "SubID": "6",
+            "DefaultText": "融資變化量\r\n(三個月)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融資變化量\r\n(三個月)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "25",
+            "SubID": "1",
+            "DefaultText": "融券使用率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融券使用率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "10.00",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "26",
+            "SubID": "3",
+            "DefaultText": "融券變化量\r\n(一週)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融券變化量\r\n(一週)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "1000.00",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "26",
+            "SubID": "1",
+            "DefaultText": "融券變化量\r\n(昨日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融券變化量\r\n(昨日)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "26",
+            "SubID": "5",
+            "DefaultText": "融券變化量\r\n(一個月)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融券變化量\r\n(一個月)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "26",
+            "SubID": "6",
+            "DefaultText": "融券變化量\r\n(三個月)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "融券變化量\r\n(三個月)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "67",
+            "SubID": "1",
+            "DefaultText": "股本",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "股本"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "68",
+            "SubID": "1",
+            "DefaultText": "市值",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "市值"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "45",
+            "SubID": "1",
+            "DefaultText": "本益比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "本益比"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "15.00",
+                    "Status": "Gd"
+                },
+                {
+                    "Compare": ">",
+                    "Value": "25",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "46",
+            "SubID": "1",
+            "DefaultText": "股價淨值比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "股價淨值比"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "1",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "33",
+            "SubID": "1",
+            "DefaultText": "股價營收比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "股價營收比"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "1.5",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "40",
+            "SubID": "1",
+            "DefaultText": "股價研發比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "股價研發比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "52",
+            "SubID": "1",
+            "DefaultText": "現金股利",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金股利"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "1",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "52",
+            "SubID": "2",
+            "DefaultText": "現金股利\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金股利\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "52",
+            "SubID": "3",
+            "DefaultText": "現金股利\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金股利\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "52",
+            "SubID": "5",
+            "DefaultText": "現金股利\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金股利\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}元",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "53",
+            "SubID": "1",
+            "DefaultText": "現金股利發放率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金股利發放率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "50",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "53",
+            "SubID": "2",
+            "DefaultText": "現金股利發放率\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金股利發放率\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "53",
+            "SubID": "3",
+            "DefaultText": "現金股利發放率\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金股利發放率\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "53",
+            "SubID": "5",
+            "DefaultText": "現金股利發放率\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金股利發放率\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "54",
+            "SubID": "1",
+            "DefaultText": "現金殖利率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金殖利率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "5",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "54",
+            "SubID": "2",
+            "DefaultText": "現金殖利率\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金殖利率\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "54",
+            "SubID": "3",
+            "DefaultText": "現金殖利率\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金殖利率\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "54",
+            "SubID": "5",
+            "DefaultText": "現金殖利率\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金殖利率\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "41",
+            "SubID": "1",
+            "DefaultText": "資產報酬率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "資產報酬率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "10",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "41",
+            "SubID": "2",
+            "DefaultText": "資產報酬率\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "資產報酬率\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "41",
+            "SubID": "3",
+            "DefaultText": "資產報酬率\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "資產報酬率\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "41",
+            "SubID": "5",
+            "DefaultText": "資產報酬率\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "資產報酬率\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "42",
+            "SubID": "1",
+            "DefaultText": "權益報酬率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "權益報酬率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "15",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "42",
+            "SubID": "2",
+            "DefaultText": "權益報酬率\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "權益報酬率\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "42",
+            "SubID": "3",
+            "DefaultText": "權益報酬率\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "權益報酬率\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "42",
+            "SubID": "5",
+            "DefaultText": "權益報酬率\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "權益報酬率\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "43",
+            "SubID": "2",
+            "DefaultText": "每股盈餘EPS",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "每股盈餘EPS"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "43",
+            "SubID": "1",
+            "DefaultText": "每股盈餘EPS\r\n(近3個月)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "每股盈餘EPS\r\n(近3個月)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "5",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "43",
+            "SubID": "3",
+            "DefaultText": "每股盈餘EPS\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "每股盈餘EPS\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "43",
+            "SubID": "4",
+            "DefaultText": "每股盈餘EPS\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "每股盈餘EPS\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "43",
+            "SubID": "6",
+            "DefaultText": "每股盈餘EPS\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "每股盈餘EPS\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "27",
+            "SubID": "1",
+            "DefaultText": "月營收",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "月營收"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "27",
+            "SubID": "2",
+            "DefaultText": "平均月營收(3m)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "平均月營收(3m)"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "27",
+            "SubID": "4",
+            "DefaultText": "平均月營收(1y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "平均月營收(1y)"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "27",
+            "SubID": "7",
+            "DefaultText": "平均月營收(3y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "平均月營收(3y)"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "31",
+            "SubID": "1",
+            "DefaultText": "營收於產業排名(3m)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營收於產業排名(3m)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "31",
+            "SubID": "3",
+            "DefaultText": "營收於產業排名(1y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營收於產業排名(1y)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "31",
+            "SubID": "6",
+            "DefaultText": "營收於產業排名(3y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營收於產業排名(3y)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "34",
+            "SubID": "1",
+            "DefaultText": "毛利率(3m)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利率(3m)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "10",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "34",
+            "SubID": "2",
+            "DefaultText": "毛利率(1y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利率(1y)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "34",
+            "SubID": "4",
+            "DefaultText": "毛利率(3y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利率(3y)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "36",
+            "SubID": "6",
+            "DefaultText": "毛利率於該產業排名(3m)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利率於該產業排名(3m)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "36",
+            "SubID": "1",
+            "DefaultText": "毛利率於該產業排名(1y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利率於該產業排名(1y)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "36",
+            "SubID": "2",
+            "DefaultText": "毛利率於該產業排名(3y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利率於該產業排名(3y)"
+                }
+            ],
+            "Format": "${val}",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "37",
+            "SubID": "1",
+            "DefaultText": "營業利益率(3m)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營業利益率(3m)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "37",
+            "SubID": "2",
+            "DefaultText": "營業利益率(1y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營業利益率(1y)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "37",
+            "SubID": "4",
+            "DefaultText": "營業利益率(3y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營業利益率(3y)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "39",
+            "SubID": "6",
+            "DefaultText": "稅後純益率(3m)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "稅後純益率(3m)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "39",
+            "SubID": "1",
+            "DefaultText": "稅後純益率(1y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "稅後純益率(1y)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "39",
+            "SubID": "2",
+            "DefaultText": "稅後純益率(3y)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "稅後純益率(3y)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "28",
+            "SubID": "1",
+            "DefaultText": "月營收成長率(MoM)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "月營收成長率(MoM)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "29",
+            "SubID": "1",
+            "DefaultText": "月營收成長率(YoY)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "月營收成長率(YoY)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "32",
+            "SubID": "1",
+            "DefaultText": "年營收成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "年營收成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "32",
+            "SubID": "2",
+            "DefaultText": "年營收成長率\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "年營收成長率\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "32",
+            "SubID": "3",
+            "DefaultText": "年營收成長率\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "年營收成長率\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "32",
+            "SubID": "5",
+            "DefaultText": "年營收成長率\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "年營收成長率\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "35",
+            "SubID": "1",
+            "DefaultText": "季毛利成長率\r\n(YoY)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "季毛利成長率\r\n(YoY)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "69",
+            "SubID": "1",
+            "DefaultText": "毛利成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "69",
+            "SubID": "2",
+            "DefaultText": "毛利成長率\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利成長率\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "69",
+            "SubID": "3",
+            "DefaultText": "毛利成長率\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利成長率\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "69",
+            "SubID": "4",
+            "DefaultText": "毛利成長率\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "毛利成長率\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "70",
+            "SubID": "1",
+            "DefaultText": "營業利益成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營業利益成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "70",
+            "SubID": "2",
+            "DefaultText": "營業利益成長率\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營業利益成長率\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "70",
+            "SubID": "3",
+            "DefaultText": "營業利益成長率\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營業利益成長率\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "70",
+            "SubID": "4",
+            "DefaultText": "營業利益成長率\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "營業利益成長率\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "71",
+            "SubID": "1",
+            "DefaultText": "稅前純益成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "稅前純益成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "71",
+            "SubID": "2",
+            "DefaultText": "稅前純益成長率\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "稅前純益成長率\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "71",
+            "SubID": "3",
+            "DefaultText": "稅前純益成長率\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "稅前純益成長率\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "71",
+            "SubID": "4",
+            "DefaultText": "稅前純益成長率\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "稅前純益成長率\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "44",
+            "SubID": "1",
+            "DefaultText": "EPS成長率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "EPS成長率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "44",
+            "SubID": "2",
+            "DefaultText": "EPS成長率\r\n(3年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "EPS成長率\r\n(3年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "44",
+            "SubID": "3",
+            "DefaultText": "EPS成長率\r\n(5年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "EPS成長率\r\n(5年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "44",
+            "SubID": "5",
+            "DefaultText": "EPS成長率\r\n(10年平均)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "EPS成長率\r\n(10年平均)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "47",
+            "SubID": "1",
+            "DefaultText": "負債比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "負債比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "70",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "48",
+            "SubID": "1",
+            "DefaultText": "流動比率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "流動比率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "100",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "49",
+            "SubID": "1",
+            "DefaultText": "速動比率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "速動比率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "100",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "72",
+            "SubID": "1",
+            "DefaultText": "現金流量比率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "現金流量比率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "8",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "50",
+            "SubID": "1",
+            "DefaultText": "自由現金流量",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "自由現金流量"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "<",
+            "WarningRules": [
+                {
+                    "Compare": "<",
+                    "Value": "0",
+                    "Status": "Bd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "59",
+            "SubID": "1",
+            "DefaultText": "漲跌幅(5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "漲幅(5日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "跌幅(5日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": ">",
+            "WarningRules": [
+                {
+                    "Compare": ">",
+                    "Value": "0",
+                    "Status": "Gd"
+                }
+            ]
+        },
+        {
+            "AbstractID": "59",
+            "SubID": "2",
+            "DefaultText": "漲跌幅(1日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "漲幅(1日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "跌幅(1日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "59",
+            "SubID": "3",
+            "DefaultText": "漲跌幅(3日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "漲幅(3日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "跌幅(3日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "59",
+            "SubID": "4",
+            "DefaultText": "漲跌幅(20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "漲幅(20日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "跌幅(20日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "59",
+            "SubID": "5",
+            "DefaultText": "漲跌幅(60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "漲幅(60日)"
+                },
+                {
+                    "VariantType": "2",
+                    "VariantText": "跌幅(60日)"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "60",
+            "SubID": "1",
+            "DefaultText": "成交均量(5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均量(5日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "60",
+            "SubID": "2",
+            "DefaultText": "成交均量(1日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均量(1日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "60",
+            "SubID": "3",
+            "DefaultText": "成交均量(3日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均量(3日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "60",
+            "SubID": "4",
+            "DefaultText": "成交均量(20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均量(20日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "60",
+            "SubID": "5",
+            "DefaultText": "成交均量(60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均量(60日)"
+                }
+            ],
+            "Format": "${val}張",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "61",
+            "SubID": "1",
+            "DefaultText": "成交均值(5日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均值(5日)"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "61",
+            "SubID": "2",
+            "DefaultText": "成交均值(1日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均值(1日)"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "61",
+            "SubID": "3",
+            "DefaultText": "成交均值(3日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均值(3日)"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "61",
+            "SubID": "4",
+            "DefaultText": "成交均值(20日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均值(20日)"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "61",
+            "SubID": "5",
+            "DefaultText": "成交均值(60日)",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "成交均值(60日)"
+                }
+            ],
+            "Format": "${val}億",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "62",
+            "SubID": "1",
+            "DefaultText": "昨量比",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "昨量比"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        },
+        {
+            "AbstractID": "63",
+            "SubID": "1",
+            "DefaultText": "週轉率",
+            "VariantList": [
+                {
+                    "VariantType": "1",
+                    "VariantText": "週轉率"
+                }
+            ],
+            "Format": "${val}%",
+            "Compare": "--"
+        }
+    ]
+}
