@@ -6,6 +6,7 @@ import statistics
 from concurrent.futures import ThreadPoolExecutor
 from openpyxl.styles import Alignment
 
+
 def get_parser():
     """參數解析器"""
     parser = argparse.ArgumentParser("金融科技創新應用")
@@ -13,6 +14,7 @@ def get_parser():
     parser.add_argument("--element", default="mom")
     parser.add_argument("--sheet-name", default="預測IC")
     return parser.parse_args()
+
 
 def find_element(worksheet, target):
     """
@@ -31,28 +33,26 @@ def find_element(worksheet, target):
             break
     return row_pos, col_pos
 
+
 class PortfolioCalculate:
     def __init__(self, input_dir, sheet):
         self.input = input_dir
         self.sheet = sheet
-        self.elements = {1: 'bm', 2: 'size', 3: 'mom'}
-<<<<<<< HEAD
-=======
+        self.elements = {1: "bm", 2: "size", 3: "mom"}
         self.new_row, self.new_col = None, None
->>>>>>> c3024eb (nineth commit)
 
     def contrast(self):
 
-        filepath = os.path.join(self.input, 'IC.xlsx')
+        filepath = os.path.join(self.input, "IC.xlsx")
         workbook = openpyxl.load_workbook(filepath, data_only=False)
         worksheet = workbook[self.sheet]
 
-        ref_target = '選絕對值最大'
+        ref_target = "選絕對值最大"
         ref_row, ref_col = find_element(worksheet, ref_target)
         start_row, start_col = ref_row, ref_col + 1
 
-        start_time_keyword = '2013/12'
-        end_time_keyword = '2024/12'
+        start_time_keyword = "2013/12"
+        end_time_keyword = "2024/12"
         start_time_row, start_time_col = find_element(worksheet, start_time_keyword)
         end_time_row, end_time_col = find_element(worksheet, end_time_keyword)
         total_data_num = end_time_col - start_time_col + 1
@@ -60,50 +60,50 @@ class PortfolioCalculate:
         ws_values = list(worksheet.values)
 
         data_storage = [
-            [ws_values[start_time_row + idx][start_time_col - 1 + i]
-             for idx in range(3)]
+            [
+                ws_values[start_time_row + idx][start_time_col - 1 + i]
+                for idx in range(3)
+            ]
             for i in range(total_data_num)
         ]
 
         id_storage = [
-            [abs(ws_values[start_time_row + idx][start_time_col - 1 + i])
-             for idx in range(3)]
+            [
+                abs(ws_values[start_time_row + idx][start_time_col - 1 + i])
+                for idx in range(3)
+            ]
             for i in range(total_data_num)
         ]
 
-
         max_data_num = [row.index(max(row)) + 1 for row in id_storage]
-        max_data_value = [data_list[num - 1] for num, data_list in zip(max_data_num, data_storage)]
+        max_data_value = [
+            data_list[num - 1] for num, data_list in zip(max_data_num, data_storage)
+        ]
 
-        for idx, (num, value) in tqdm(enumerate(zip(max_data_num, max_data_value)),
-                                      total=len(max_data_num), desc='Pasting...'):
+        for idx, (num, value) in tqdm(
+            enumerate(zip(max_data_num, max_data_value)),
+            total=len(max_data_num),
+            desc="Pasting...",
+        ):
             cell1 = worksheet.cell(row=start_row, column=start_col + 1 + idx)
             cell1.value = num
-            cell1.alignment = Alignment(horizontal='center', vertical='center')
+            cell1.alignment = Alignment(horizontal="center", vertical="center")
 
             cell2 = worksheet.cell(row=start_row + 1, column=start_col + 1 + idx)
 
             cell2.value = self.elements.get(num, "")
-            cell2.alignment = Alignment(horizontal='center', vertical='center')
-<<<<<<< HEAD
+            cell2.alignment = Alignment(horizontal="center", vertical="center")
 
             cell3 = worksheet.cell(row=start_row + 2, column=start_col + 1 + idx)
             cell3.value = value
-            cell3.alignment = Alignment(horizontal='center', vertical='center')
+            cell3.alignment = Alignment(horizontal="center", vertical="center")
 
-=======
-
-            cell3 = worksheet.cell(row=start_row + 2, column=start_col + 1 + idx)
-            cell3.value = value
-            cell3.alignment = Alignment(horizontal='center', vertical='center')
-
->>>>>>> c3024eb (nineth commit)
         workbook.save(filepath)
         workbook.close()
 
         return max_data_num
 
-    def process(self, element_id, date_str='2013/12'):
+    def process(self, element_id, date_str="2013/12"):
 
         element_name = self.elements.get(element_id, None)
         if not element_name:
@@ -116,17 +116,12 @@ class PortfolioCalculate:
         ws = input_data[f"{element_name}補值"]
         next_return = input_data["下個月月報酬補值"]
 
-
         _, start_column = find_element(ws, date_str)
         if start_column is None:
             raise ValueError(f"在工作表中找不到日期: {date_str}")
 
-<<<<<<< HEAD
-        col_index = start_column
-=======
-        col_index = start_column-1
->>>>>>> c3024eb (nineth commit)
-        
+        col_index = start_column - 1
+
         ws_values = list(ws.values)
         nr_values = list(next_return.values)
         SplitNum = [96, 48, 19, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
@@ -135,7 +130,7 @@ class PortfolioCalculate:
             data = []
 
             for row_idx in range(1, len(ws_values) - 1):
-                
+
                 key_val = ws_values[row_idx][col_num]
 
                 nr_val = nr_values[row_idx][col_num]
@@ -156,31 +151,21 @@ class PortfolioCalculate:
 
         columns_to_process = [col_index]
         data_storage = []
-<<<<<<< HEAD
-        with ThreadPoolExecutor() as executor:
-            results = list(tqdm(
-                executor.map(_process_column, columns_to_process),
-                total=len(columns_to_process),
-                desc="Processing columns...",
-            ))
-=======
-        with ThreadPoolExecutor(max_workers=os.cpu_count()*10) as executor:
-            results = list(
-                executor.map(_process_column, columns_to_process))
->>>>>>> c3024eb (nineth commit)
+        with ThreadPoolExecutor(max_workers=os.cpu_count() * 10) as executor:
+            results = list(executor.map(_process_column, columns_to_process))
             data_storage.extend(results)
 
         self.store_data(data_storage)
 
         # 更新日期：將月份加 1，並處理跨年情形
-        year, month = map(int, date_str.split('/'))
+        year, month = map(int, date_str.split("/"))
         if month < 12:
             month += 1
         else:
             month = 1
             year += 1
         new_date = f"{year}/{month:02d}"
-        
+
         return new_date
 
     def store_data(self, results):
@@ -188,51 +173,31 @@ class PortfolioCalculate:
         filepath = os.path.join(self.input, "IC.xlsx")
         output_wb = openpyxl.load_workbook(filepath)
         worksheet = output_wb[self.sheet]
-<<<<<<< HEAD
-
-        ref_target = "投資組合"
-        standard_row, standard_col = find_element(worksheet, ref_target)
-        if standard_row is None or standard_col is None:
-            raise ValueError("找不到 '投資組合' 的位置")
-        start_row = standard_row + 2
-        start_col = standard_col + 2
-
-        for month_data in tqdm(results, desc="Saving Data..."):
-=======
-        if all([self.new_col is None, self.new_row is None ]):
+        if all([self.new_col is None, self.new_row is None]):
             ref_target = "投資組合"
-            standard_row, standard_col = find_element(worksheet, ref_target)    
+            standard_row, standard_col = find_element(worksheet, ref_target)
             if standard_row is None or standard_col is None:
                 raise ValueError("找不到 '投資組合' 的位置")
-            
+
             start_row = standard_row + 2
             start_col = standard_col + 2
-        
-        else: 
+
+        else:
             start_row = self.new_row
             start_col = self.new_col
 
         for month_data in results:
->>>>>>> c3024eb (nineth commit)
             for idx, data in enumerate(month_data):
                 worksheet.cell(
                     row=start_row + idx,
                     column=start_col,
                     value=round(float(data), 8),
                 )
-<<<<<<< HEAD
-            start_col += 1
-=======
         self.new_row = start_row
-        self.new_col = start_col + 1            
+        self.new_col = start_col + 1
 
         output_wb.save(filepath)
 
-
->>>>>>> c3024eb (nineth commit)
-
-        output_wb.save(filepath)
-        print("資料儲存成功!!!")
 
 def main():
     args = get_parser()
@@ -241,16 +206,10 @@ def main():
     pc = PortfolioCalculate(input_dir, sheet_name)
     elements_list = pc.contrast()
 
-    date_str = '2013/12'
-<<<<<<< HEAD
-    for elem in elements_list:
-        date_str = pc.process(elem, date_str)
-        
-=======
-    for elem in tqdm(elements_list, total=len(elements_list), desc='Processing'):
+    date_str = "2013/12"
+    for elem in tqdm(elements_list, total=len(elements_list), desc="Processing"):
         date_str = pc.process(elem, date_str)
 
->>>>>>> c3024eb (nineth commit)
 
 if __name__ == "__main__":
     main()
