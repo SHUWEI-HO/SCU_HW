@@ -36,6 +36,10 @@ class PortfolioCalculate:
         self.input = input_dir
         self.sheet = sheet
         self.elements = {1: 'bm', 2: 'size', 3: 'mom'}
+<<<<<<< HEAD
+=======
+        self.new_row, self.new_col = None, None
+>>>>>>> c3024eb (nineth commit)
 
     def contrast(self):
 
@@ -81,11 +85,19 @@ class PortfolioCalculate:
 
             cell2.value = self.elements.get(num, "")
             cell2.alignment = Alignment(horizontal='center', vertical='center')
+<<<<<<< HEAD
 
             cell3 = worksheet.cell(row=start_row + 2, column=start_col + 1 + idx)
             cell3.value = value
             cell3.alignment = Alignment(horizontal='center', vertical='center')
 
+=======
+
+            cell3 = worksheet.cell(row=start_row + 2, column=start_col + 1 + idx)
+            cell3.value = value
+            cell3.alignment = Alignment(horizontal='center', vertical='center')
+
+>>>>>>> c3024eb (nineth commit)
         workbook.save(filepath)
         workbook.close()
 
@@ -109,7 +121,11 @@ class PortfolioCalculate:
         if start_column is None:
             raise ValueError(f"在工作表中找不到日期: {date_str}")
 
+<<<<<<< HEAD
         col_index = start_column
+=======
+        col_index = start_column-1
+>>>>>>> c3024eb (nineth commit)
         
         ws_values = list(ws.values)
         nr_values = list(next_return.values)
@@ -121,6 +137,7 @@ class PortfolioCalculate:
             for row_idx in range(1, len(ws_values) - 1):
                 
                 key_val = ws_values[row_idx][col_num]
+
                 nr_val = nr_values[row_idx][col_num]
                 data.append({key_val: nr_val})
 
@@ -139,12 +156,18 @@ class PortfolioCalculate:
 
         columns_to_process = [col_index]
         data_storage = []
+<<<<<<< HEAD
         with ThreadPoolExecutor() as executor:
             results = list(tqdm(
                 executor.map(_process_column, columns_to_process),
                 total=len(columns_to_process),
                 desc="Processing columns...",
             ))
+=======
+        with ThreadPoolExecutor(max_workers=os.cpu_count()*10) as executor:
+            results = list(
+                executor.map(_process_column, columns_to_process))
+>>>>>>> c3024eb (nineth commit)
             data_storage.extend(results)
 
         self.store_data(data_storage)
@@ -165,6 +188,7 @@ class PortfolioCalculate:
         filepath = os.path.join(self.input, "IC.xlsx")
         output_wb = openpyxl.load_workbook(filepath)
         worksheet = output_wb[self.sheet]
+<<<<<<< HEAD
 
         ref_target = "投資組合"
         standard_row, standard_col = find_element(worksheet, ref_target)
@@ -174,13 +198,38 @@ class PortfolioCalculate:
         start_col = standard_col + 2
 
         for month_data in tqdm(results, desc="Saving Data..."):
+=======
+        if all([self.new_col is None, self.new_row is None ]):
+            ref_target = "投資組合"
+            standard_row, standard_col = find_element(worksheet, ref_target)    
+            if standard_row is None or standard_col is None:
+                raise ValueError("找不到 '投資組合' 的位置")
+            
+            start_row = standard_row + 2
+            start_col = standard_col + 2
+        
+        else: 
+            start_row = self.new_row
+            start_col = self.new_col
+
+        for month_data in results:
+>>>>>>> c3024eb (nineth commit)
             for idx, data in enumerate(month_data):
                 worksheet.cell(
                     row=start_row + idx,
                     column=start_col,
                     value=round(float(data), 8),
                 )
+<<<<<<< HEAD
             start_col += 1
+=======
+        self.new_row = start_row
+        self.new_col = start_col + 1            
+
+        output_wb.save(filepath)
+
+
+>>>>>>> c3024eb (nineth commit)
 
         output_wb.save(filepath)
         print("資料儲存成功!!!")
@@ -193,9 +242,15 @@ def main():
     elements_list = pc.contrast()
 
     date_str = '2013/12'
+<<<<<<< HEAD
     for elem in elements_list:
         date_str = pc.process(elem, date_str)
         
+=======
+    for elem in tqdm(elements_list, total=len(elements_list), desc='Processing'):
+        date_str = pc.process(elem, date_str)
+
+>>>>>>> c3024eb (nineth commit)
 
 if __name__ == "__main__":
     main()
