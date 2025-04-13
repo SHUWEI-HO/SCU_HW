@@ -205,8 +205,7 @@ class PortfolioCalculate:
                     value=round(float(data), 8),
                 )
             start_col += 1
-        # self.new_row = start_row
-        # self.new_col = start_col + 1
+
 
         output_wb.save(filepath)
 
