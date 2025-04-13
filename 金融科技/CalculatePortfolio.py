@@ -40,7 +40,7 @@ class PortfolioCalculate:
         self.sheet = sheet
         self.elements = {1: "bm", 2: "size", 3: "mom"}
         self.data_storage = []
-        self.new_row, self.new_col = None, None
+
 
     def contrast(self):
 
@@ -185,7 +185,7 @@ class PortfolioCalculate:
         filepath = os.path.join(self.input, "IC.xlsx")
         output_wb = openpyxl.load_workbook(filepath)
         worksheet = output_wb[self.sheet]
-        # if all([self.new_col is None, self.new_row is None]):
+
         ref_target = "投資組合"
         standard_row, standard_col = find_element(worksheet, ref_target)
         if standard_row is None or standard_col is None:
@@ -194,9 +194,7 @@ class PortfolioCalculate:
         start_row = standard_row + 2
         start_col = standard_col + 2
 
-        # else:
-        #     start_row = self.new_row
-        #     start_col = self.new_col
+
 
         for month_data in tqdm(self.data_storage, total=len(self.data_storage), desc='Storing...'):
 
