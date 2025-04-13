@@ -10,7 +10,7 @@ from openpyxl.styles import Alignment
 def get_parser():
     """參數解析器"""
     parser = argparse.ArgumentParser("金融科技創新應用")
-    parser.add_argument("--input", default="Data/")
+    parser.add_argument("--input", default="data/")
     parser.add_argument("--element", default="mom")
     parser.add_argument("--sheet-name", default="預測IC")
     return parser.parse_args()
@@ -39,6 +39,7 @@ class PortfolioCalculate:
         self.input = input_dir
         self.sheet = sheet
         self.elements = {1: "bm", 2: "size", 3: "mom"}
+        self.data_storage = []
         self.new_row, self.new_col = None, None
 
     def contrast(self):
@@ -101,17 +102,23 @@ class PortfolioCalculate:
         workbook.save(filepath)
         workbook.close()
 
-        return max_data_num
+        return max_data_num, max_data_value
 
-    def process(self, element_id, date_str="2013/12"):
+    def load_worksheet(self):
+
+        self.data_dict = {}
+        for idx, value in enumerate(self.elements.values()):
+            data = openpyxl.load_workbook(os.path.join(self.input, f'{value}.xlsx'),
+                                          data_only=True)
+            self.data_dict[idx+1] = data
+
+    def process(self, element_id, val, date_str="2013/12"):
 
         element_name = self.elements.get(element_id, None)
         if not element_name:
             raise ValueError(f"無效的元素編號: {element_id}")
-        filename = f"{element_name}.xlsx"
 
-        filepath = os.path.join(self.input, filename)
-        input_data = openpyxl.load_workbook(filepath, data_only=True)
+        input_data = self.data_dict[element_id]
 
         ws = input_data[f"{element_name}補值"]
         next_return = input_data["下個月月報酬補值"]
@@ -126,7 +133,7 @@ class PortfolioCalculate:
         nr_values = list(next_return.values)
         SplitNum = [96, 48, 19, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
-        def _process_column(col_num):
+        def _process_column(col_num, val):
             data = []
 
             for row_idx in range(1, len(ws_values) - 1):
@@ -146,18 +153,23 @@ class PortfolioCalculate:
                 buy_high.append(high_mean)
                 buy_low.append(low_mean)
 
-            results = [low - high for high, low in zip(buy_high, buy_low)]
+            results = (
+                [low - high for high, low in zip(buy_high, buy_low)]
+                if val < 0
+                else [high - low for high, low in zip(buy_high, buy_low)]
+            )
             return results
 
         columns_to_process = [col_index]
-        data_storage = []
+
         with ThreadPoolExecutor(max_workers=os.cpu_count() * 10) as executor:
-            results = list(executor.map(_process_column, columns_to_process))
-            data_storage.extend(results)
+            results = list(
+                executor.map(
+                    _process_column, columns_to_process, [val] * len(columns_to_process)
+                )
+            )
+            self.data_storage.extend(results)
 
-        self.store_data(data_storage)
-
-        # 更新日期：將月份加 1，並處理跨年情形
         year, month = map(int, date_str.split("/"))
         if month < 12:
             month += 1
@@ -168,33 +180,35 @@ class PortfolioCalculate:
 
         return new_date
 
-    def store_data(self, results):
+    def store_data(self):
 
         filepath = os.path.join(self.input, "IC.xlsx")
         output_wb = openpyxl.load_workbook(filepath)
         worksheet = output_wb[self.sheet]
-        if all([self.new_col is None, self.new_row is None]):
-            ref_target = "投資組合"
-            standard_row, standard_col = find_element(worksheet, ref_target)
-            if standard_row is None or standard_col is None:
-                raise ValueError("找不到 '投資組合' 的位置")
+        # if all([self.new_col is None, self.new_row is None]):
+        ref_target = "投資組合"
+        standard_row, standard_col = find_element(worksheet, ref_target)
+        if standard_row is None or standard_col is None:
+            raise ValueError("找不到 '投資組合' 的位置")
 
-            start_row = standard_row + 2
-            start_col = standard_col + 2
+        start_row = standard_row + 2
+        start_col = standard_col + 2
 
-        else:
-            start_row = self.new_row
-            start_col = self.new_col
+        # else:
+        #     start_row = self.new_row
+        #     start_col = self.new_col
 
-        for month_data in results:
+        for month_data in tqdm(self.data_storage, total=len(self.data_storage), desc='Storing...'):
+
             for idx, data in enumerate(month_data):
                 worksheet.cell(
                     row=start_row + idx,
                     column=start_col,
                     value=round(float(data), 8),
                 )
-        self.new_row = start_row
-        self.new_col = start_col + 1
+            start_col += 1
+        # self.new_row = start_row
+        # self.new_col = start_col + 1
 
         output_wb.save(filepath)
 
@@ -204,12 +218,13 @@ def main():
     input_dir = args.input
     sheet_name = args.sheet_name
     pc = PortfolioCalculate(input_dir, sheet_name)
-    elements_list = pc.contrast()
-
+    pc.load_worksheet()
+    elements_list, value_list = pc.contrast()
     date_str = "2013/12"
-    for elem in tqdm(elements_list, total=len(elements_list), desc="Processing"):
-        date_str = pc.process(elem, date_str)
-
+    for elem, val in tqdm(zip(elements_list, value_list), total=len(elements_list), desc="Processing"):
+        date_str = pc.process(elem, val, date_str)
+    
+    pc.store_data()
 
 if __name__ == "__main__":
     main()
