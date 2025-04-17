@@ -53,7 +53,7 @@ class PortfolioCalculate:
         start_row, start_col = ref_row, ref_col + 1
 
         start_time_keyword = "2013/12"
-        end_time_keyword = "2024/12"
+        end_time_keyword = "2025/01"
         start_time_row, start_time_col = find_element(worksheet, start_time_keyword)
         end_time_row, end_time_col = find_element(worksheet, end_time_keyword)
         total_data_num = end_time_col - start_time_col + 1
