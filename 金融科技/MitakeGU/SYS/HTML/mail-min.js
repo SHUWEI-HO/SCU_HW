@@ -1,0 +1,1 @@
+function SetFontSize(a){var c=parseInt(a,10);if(isNaN(c)||c>5||c<-5){return}var b=75+c*10;document.body.style.fontSize=String(b)+"%"};

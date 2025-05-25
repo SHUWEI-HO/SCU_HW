@@ -1,0 +1,1359 @@
+{
+    "Name": "選股風格測驗",
+    "Version": "20210816153835",
+    "Classification": [
+        {
+            "ID": "1",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您預計的持股時間長度",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "當沖",
+                    "Desc": "一天",
+                    "NextID": "2"
+                },
+                {
+                    "Title": "隔日沖",
+                    "Desc": "兩天",
+                    "NextID": "6"
+                },
+                {
+                    "Title": "短期",
+                    "Desc": "兩週內",
+                    "NextID": "10"
+                },
+                {
+                    "Title": "中期 ",
+                    "Desc": "兩週到一年內 ",
+                    "NextID": "20"
+                },
+                {
+                    "Title": "長期",
+                    "Desc": "一年以上",
+                    "NextID": "29"
+                }
+            ]
+        },
+        {
+            "ID": "2",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您的多空偏好是？",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "多",
+                    "Desc": "",
+                    "NextID": "3"
+                },
+                {
+                    "Title": "空",
+                    "Desc": "",
+                    "NextID": "4"
+                },
+                {
+                    "Title": "多空都做",
+                    "Desc": "",
+                    "NextID": "5"
+                }
+            ]
+        },
+        {
+            "ID": "3",
+            "NodeType": "R",
+            "Param": "1",
+            "Title": "高速衝浪高手",
+            "Desc": "當沖＿多"
+        },
+        {
+            "ID": "4",
+            "NodeType": "R",
+            "Param": "2",
+            "Title": "逆向衝浪高手",
+            "Desc": "當沖＿空"
+        },
+        {
+            "ID": "5",
+            "NodeType": "R",
+            "Param": "3",
+            "Title": "電動馬達衝浪高手",
+            "Desc": "當沖＿多空都做"
+        },
+        {
+            "ID": "6",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您的多空偏好是？",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "多",
+                    "Desc": "",
+                    "NextID": "7"
+                },
+                {
+                    "Title": "空",
+                    "Desc": "",
+                    "NextID": "8"
+                },
+                {
+                    "Title": "多空都做",
+                    "Desc": "",
+                    "NextID": "9"
+                }
+            ]
+        },
+        {
+            "ID": "7",
+            "NodeType": "R",
+            "Param": "4",
+            "Title": "飛越鯊魚",
+            "Desc": "隔日沖＿多"
+        },
+        {
+            "ID": "8",
+            "NodeType": "R",
+            "Param": "5",
+            "Title": "俯衝鯊魚",
+            "Desc": "隔日沖＿空"
+        },
+        {
+            "ID": "9",
+            "NodeType": "R",
+            "Param": "6",
+            "Title": "翻滾鯊魚",
+            "Desc": "隔日沖＿多空都做"
+        },
+        {
+            "ID": "10",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您的投資風格是？",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "順勢操作",
+                    "Desc": "",
+                    "NextID": "11"
+                },
+                {
+                    "Title": "逆勢操作",
+                    "Desc": "抓反彈",
+                    "NextID": "15"
+                },
+                {
+                    "Title": "找能填息成功的",
+                    "Desc": "",
+                    "NextID": "19"
+                }
+            ]
+        },
+        {
+            "ID": "11",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您的多空偏好是？",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "多",
+                    "Desc": "",
+                    "NextID": "12"
+                },
+                {
+                    "Title": "空",
+                    "Desc": "",
+                    "NextID": "13"
+                },
+                {
+                    "Title": "多空都做",
+                    "Desc": "",
+                    "NextID": "14"
+                }
+            ]
+        },
+        {
+            "ID": "12",
+            "NodeType": "R",
+            "Param": "7",
+            "Title": "上飄水母",
+            "Desc": "短期＿跟趨勢＿多"
+        },
+        {
+            "ID": "13",
+            "NodeType": "R",
+            "Param": "8",
+            "Title": "下潛水母",
+            "Desc": "短期＿跟趨勢＿空"
+        },
+        {
+            "ID": "14",
+            "NodeType": "R",
+            "Param": "9",
+            "Title": "很會的水母",
+            "Desc": "短期＿跟趨勢＿多空都做"
+        },
+        {
+            "ID": "15",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您的多空偏好是？",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "多",
+                    "Desc": "",
+                    "NextID": "16"
+                },
+                {
+                    "Title": "空",
+                    "Desc": "",
+                    "NextID": "17"
+                },
+                {
+                    "Title": "多空都做",
+                    "Desc": "",
+                    "NextID": "18"
+                }
+            ]
+        },
+        {
+            "ID": "16",
+            "NodeType": "R",
+            "Param": "10",
+            "Title": "躍龍門鯉魚",
+            "Desc": "短期＿抓反彈＿多"
+        },
+        {
+            "ID": "17",
+            "NodeType": "R",
+            "Param": "11",
+            "Title": "瀑布鯉魚",
+            "Desc": "短期＿抓反彈＿多"
+        },
+        {
+            "ID": "18",
+            "NodeType": "R",
+            "Param": "12",
+            "Title": "成精鯉魚",
+            "Desc": "短期＿抓反彈＿多空都做"
+        },
+        {
+            "ID": "19",
+            "NodeType": "R",
+            "Param": "13",
+            "Title": "潛水艇",
+            "Desc": "短期＿找能填息成功的"
+        },
+        {
+            "ID": "20",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您的投資風格是？",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "順勢操作",
+                    "Desc": "",
+                    "NextID": "21"
+                },
+                {
+                    "Title": "逆勢操作",
+                    "Desc": "抓反彈",
+                    "NextID": "25"
+                }
+            ]
+        },
+        {
+            "ID": "21",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您的多空偏好是？",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "多",
+                    "Desc": "",
+                    "NextID": "22"
+                },
+                {
+                    "Title": "空",
+                    "Desc": "",
+                    "NextID": "23"
+                },
+                {
+                    "Title": "多空都做",
+                    "Desc": "",
+                    "NextID": "24"
+                }
+            ]
+        },
+        {
+            "ID": "22",
+            "NodeType": "R",
+            "Param": "14",
+            "Title": "上游海龜",
+            "Desc": "中期＿跟趨勢＿多"
+        },
+        {
+            "ID": "23",
+            "NodeType": "R",
+            "Param": "15",
+            "Title": "下潛海龜",
+            "Desc": "中期＿跟趨勢＿空"
+        },
+        {
+            "ID": "24",
+            "NodeType": "R",
+            "Param": "16",
+            "Title": "很會的海龜",
+            "Desc": "中期＿跟趨勢＿多空都做"
+        },
+        {
+            "ID": "25",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您的多空偏好是？",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "多",
+                    "Desc": "",
+                    "NextID": "26"
+                },
+                {
+                    "Title": "空",
+                    "Desc": "",
+                    "NextID": "27"
+                },
+                {
+                    "Title": "多空都做",
+                    "Desc": "",
+                    "NextID": "28"
+                }
+            ]
+        },
+        {
+            "ID": "26",
+            "NodeType": "R",
+            "Param": "17",
+            "Title": "逆流而上鮭魚",
+            "Desc": "中期＿抓反彈＿多"
+        },
+        {
+            "ID": "27",
+            "NodeType": "R",
+            "Param": "18",
+            "Title": "跳瀑布鮭魚",
+            "Desc": "中期＿抓反彈＿空"
+        },
+        {
+            "ID": "28",
+            "NodeType": "R",
+            "Param": "19",
+            "Title": "成精鮭魚",
+            "Desc": "中期＿抓反彈＿多空都做"
+        },
+        {
+            "ID": "29",
+            "NodeType": "Q",
+            "Param": "0",
+            "Title": "您的投資風格是？",
+            "Desc": "",
+            "Option": [
+                {
+                    "Title": "成長",
+                    "Desc": "",
+                    "NextID": "30"
+                },
+                {
+                    "Title": "價值",
+                    "Desc": "",
+                    "NextID": "31"
+                },
+                {
+                    "Title": "定存",
+                    "Desc": "",
+                    "NextID": "32"
+                }
+            ]
+        },
+        {
+            "ID": "30",
+            "NodeType": "R",
+            "Param": "20",
+            "Title": "飆車旗魚",
+            "Desc": "長期＿成長股"
+        },
+        {
+            "ID": "31",
+            "NodeType": "R",
+            "Param": "21",
+            "Title": "尋寶燈籠魚",
+            "Desc": "長期＿價值股"
+        },
+        {
+            "ID": "32",
+            "NodeType": "R",
+            "Param": "22",
+            "Title": "順水飄翻車魚",
+            "Desc": "長期＿定存股"
+        }
+    ],
+    "StyleRecommend": [
+        {
+            "StyleID": "1",
+            "StyleName": "高速衝浪高手",
+            "Title": "當沖＿多",
+            "Description": "當您在享受狂飆快感的同時，為了不被大浪給吞噬，您嚴格講究紀律，窮盡一切鑽研並驗證屬於您自己的規則與哲學。無論今日如何大風大浪，明天將又是個嶄新的一天。",
+            "Recommend": [
+                {
+                    "StrategyID": "23",
+                    "StrategyName": "漲幅>N%"
+                },
+                {
+                    "StrategyID": "26",
+                    "StrategyName": "股價\r\n創新高"
+                },
+                {
+                    "StrategyID": "27",
+                    "StrategyName": "突破\r\n上關價"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                }
+            ]
+        },
+        {
+            "StyleID": "2",
+            "StyleName": "逆向衝浪高手",
+            "Title": "當沖＿空",
+            "Description": "當您在享受狂飆快感的同時，為了不被大浪給吞噬，您嚴格講究紀律，窮盡一切鑽研並驗證屬於您自己的規則與哲學。無論今日如何大風大浪，明天將又是個嶄新的一天。",
+            "Recommend": [
+                {
+                    "StrategyID": "38",
+                    "StrategyName": "跌幅>N%"
+                },
+                {
+                    "StrategyID": "41",
+                    "StrategyName": "股價\r\n創新低"
+                },
+                {
+                    "StrategyID": "42",
+                    "StrategyName": "跌破\r\n下關價"
+                }
+            ]
+        },
+        {
+            "StyleID": "3",
+            "StyleName": "電動馬達衝浪高手",
+            "Title": "當沖＿多空都做",
+            "Description": "當您在享受狂飆快感的同時，為了不被大浪給吞噬，您嚴格講究紀律，窮盡一切鑽研並驗證屬於您自己的規則與哲學。無論今日如何大風大浪，明天將又是個嶄新的一天。",
+            "Recommend": [
+                {
+                    "StrategyID": "23",
+                    "StrategyName": "漲幅>N%"
+                },
+                {
+                    "StrategyID": "26",
+                    "StrategyName": "股價\r\n創新高"
+                },
+                {
+                    "StrategyID": "27",
+                    "StrategyName": "突破\r\n上關價"
+                },
+                {
+                    "StrategyID": "38",
+                    "StrategyName": "跌幅>N%"
+                },
+                {
+                    "StrategyID": "41",
+                    "StrategyName": "股價\r\n創新低"
+                },
+                {
+                    "StrategyID": "42",
+                    "StrategyName": "跌破\r\n下關價"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                }
+            ]
+        },
+        {
+            "StyleID": "4",
+            "StyleName": "飛越鯊魚",
+            "Title": "隔日沖＿多",
+            "Description": "身為一隻海洋中嗜血的鯊魚，您擁有極為敏銳的嗅覺，不斷追蹤股海中那隱隱約約的血腥味，在突發式的群眾暴力之後，留下的只有獵物的血骨肉末。",
+            "Recommend": [
+                {
+                    "StrategyID": "46",
+                    "StrategyName": "長紅"
+                },
+                {
+                    "StrategyID": "47",
+                    "StrategyName": "突破糾結均線"
+                },
+                {
+                    "StrategyID": "48",
+                    "StrategyName": "股價突破均線"
+                },
+                {
+                    "StrategyID": "50",
+                    "StrategyName": "多頭吞噬"
+                },
+                {
+                    "StrategyID": "51",
+                    "StrategyName": "內困三日翻紅"
+                },
+                {
+                    "StrategyID": "52",
+                    "StrategyName": "一紅吃\r\n三黑"
+                },
+                {
+                    "StrategyID": "53",
+                    "StrategyName": "孤島晨星"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                },
+                {
+                    "StrategyID": "167",
+                    "StrategyName": "KD指標優勢股"
+                }
+            ]
+        },
+        {
+            "StyleID": "5",
+            "StyleName": "俯衝鯊魚",
+            "Title": "隔日沖＿空",
+            "Description": "身為一隻海洋中嗜血的鯊魚，您擁有極為敏銳的嗅覺，不斷追蹤股海中那隱隱約約的血腥味，在突發式的群眾暴力之後，留下的只有獵物的血骨肉末。",
+            "Recommend": [
+                {
+                    "StrategyID": "54",
+                    "StrategyName": "長黑"
+                },
+                {
+                    "StrategyID": "55",
+                    "StrategyName": "跌破糾結均線"
+                },
+                {
+                    "StrategyID": "56",
+                    "StrategyName": "股價跌破均線"
+                },
+                {
+                    "StrategyID": "58",
+                    "StrategyName": "空頭吞噬"
+                },
+                {
+                    "StrategyID": "59",
+                    "StrategyName": "內困三日翻黑"
+                },
+                {
+                    "StrategyID": "60",
+                    "StrategyName": "一黑吃\r\n三紅"
+                },
+                {
+                    "StrategyID": "61",
+                    "StrategyName": "孤島夜星"
+                }
+            ]
+        },
+        {
+            "StyleID": "6",
+            "StyleName": "翻滾鯊魚",
+            "Title": "隔日沖＿多空都做",
+            "Description": "身為一隻海洋中嗜血的鯊魚，您擁有極為敏銳的嗅覺，不斷追蹤股海中那隱隱約約的血腥味，在突發式的群眾暴力之後，留下的只有獵物的血骨肉末。",
+            "Recommend": [
+                {
+                    "StrategyID": "46",
+                    "StrategyName": "長紅"
+                },
+                {
+                    "StrategyID": "47",
+                    "StrategyName": "突破糾結均線"
+                },
+                {
+                    "StrategyID": "48",
+                    "StrategyName": "股價突破均線"
+                },
+                {
+                    "StrategyID": "50",
+                    "StrategyName": "多頭吞噬"
+                },
+                {
+                    "StrategyID": "51",
+                    "StrategyName": "內困三日翻紅"
+                },
+                {
+                    "StrategyID": "52",
+                    "StrategyName": "一紅吃\r\n三黑"
+                },
+                {
+                    "StrategyID": "53",
+                    "StrategyName": "孤島晨星"
+                },
+                {
+                    "StrategyID": "54",
+                    "StrategyName": "長黑"
+                },
+                {
+                    "StrategyID": "55",
+                    "StrategyName": "跌破糾結均線"
+                },
+                {
+                    "StrategyID": "56",
+                    "StrategyName": "股價跌破均線"
+                },
+                {
+                    "StrategyID": "58",
+                    "StrategyName": "空頭吞噬"
+                },
+                {
+                    "StrategyID": "59",
+                    "StrategyName": "內困三日翻黑"
+                },
+                {
+                    "StrategyID": "60",
+                    "StrategyName": "一黑吃\r\n三紅"
+                },
+                {
+                    "StrategyID": "61",
+                    "StrategyName": "孤島夜星"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                },
+                {
+                    "StrategyID": "167",
+                    "StrategyName": "KD指標優勢股"
+                }
+            ]
+        },
+        {
+            "StyleID": "7",
+            "StyleName": "上飄水母",
+            "Title": "短期＿跟趨勢＿多",
+            "Description": "您從不標新立異，理解何謂生存的王道。無論股海有多深，無論洋流有多急，您總能順勢飄蕩其中，悠游自得。",
+            "Recommend": [
+                {
+                    "StrategyID": "1",
+                    "StrategyName": "外資近日買超"
+                },
+                {
+                    "StrategyID": "2",
+                    "StrategyName": "投信近日買超"
+                },
+                {
+                    "StrategyID": "3",
+                    "StrategyName": "自營商\r\n近日買超"
+                },
+                {
+                    "StrategyID": "9",
+                    "StrategyName": "主力密集收貨股"
+                },
+                {
+                    "StrategyID": "47",
+                    "StrategyName": "突破糾結均線"
+                },
+                {
+                    "StrategyID": "48",
+                    "StrategyName": "股價突破均線"
+                },
+                {
+                    "StrategyID": "49",
+                    "StrategyName": "均線多頭排列"
+                },
+                {
+                    "StrategyID": "62",
+                    "StrategyName": "KD\n黃金交叉"
+                },
+                {
+                    "StrategyID": "63",
+                    "StrategyName": "MACD\n黃金交叉"
+                },
+                {
+                    "StrategyID": "64",
+                    "StrategyName": "RSI\n黃金交叉"
+                },
+                {
+                    "StrategyID": "141",
+                    "StrategyName": "短線多頭"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "165",
+                    "StrategyName": "近期法人籌碼優勢"
+                },
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                },
+                {
+                    "StrategyID": "167",
+                    "StrategyName": "KD指標優勢股"
+                }
+            ]
+        },
+        {
+            "StyleID": "8",
+            "StyleName": "下潛水母",
+            "Title": "短期＿跟趨勢＿空",
+            "Description": "您從不標新立異，理解何謂生存的王道。無論股海有多深，無論洋流有多急，您總能順勢飄蕩其中，悠游自得。",
+            "Recommend": [
+                {
+                    "StrategyID": "4",
+                    "StrategyName": "外資近日賣超"
+                },
+                {
+                    "StrategyID": "5",
+                    "StrategyName": "投信近日賣超"
+                },
+                {
+                    "StrategyID": "6",
+                    "StrategyName": "自營商\r\n近日賣超"
+                },
+                {
+                    "StrategyID": "55",
+                    "StrategyName": "跌破糾結均線"
+                },
+                {
+                    "StrategyID": "56",
+                    "StrategyName": "股價跌破均線"
+                },
+                {
+                    "StrategyID": "57",
+                    "StrategyName": "均線空頭排列"
+                },
+                {
+                    "StrategyID": "65",
+                    "StrategyName": "KD\n死亡交叉"
+                },
+                {
+                    "StrategyID": "66",
+                    "StrategyName": "MACD\n死亡交叉"
+                },
+                {
+                    "StrategyID": "67",
+                    "StrategyName": "RSI\n死亡交叉"
+                },
+                {
+                    "StrategyID": "121",
+                    "StrategyName": "主力密集出貨股"
+                },
+                {
+                    "StrategyID": "143",
+                    "StrategyName": "短線空頭"
+                }
+            ]
+        },
+        {
+            "StyleID": "9",
+            "StyleName": "很會的水母",
+            "Title": "短期＿跟趨勢＿多空都做",
+            "Description": "您從不標新立異，理解何謂生存的王道。無論股海有多深，無論洋流有多急，您總能順勢飄蕩其中，悠游自得。",
+            "Recommend": [
+                {
+                    "StrategyID": "1",
+                    "StrategyName": "外資近日買超"
+                },
+                {
+                    "StrategyID": "2",
+                    "StrategyName": "投信近日買超"
+                },
+                {
+                    "StrategyID": "3",
+                    "StrategyName": "自營商\r\n近日買超"
+                },
+                {
+                    "StrategyID": "4",
+                    "StrategyName": "外資近日賣超"
+                },
+                {
+                    "StrategyID": "5",
+                    "StrategyName": "投信近日賣超"
+                },
+                {
+                    "StrategyID": "6",
+                    "StrategyName": "自營商\r\n近日賣超"
+                },
+                {
+                    "StrategyID": "9",
+                    "StrategyName": "主力密集收貨股"
+                },
+                {
+                    "StrategyID": "47",
+                    "StrategyName": "突破糾結均線"
+                },
+                {
+                    "StrategyID": "48",
+                    "StrategyName": "股價突破均線"
+                },
+                {
+                    "StrategyID": "49",
+                    "StrategyName": "均線多頭排列"
+                },
+                {
+                    "StrategyID": "55",
+                    "StrategyName": "跌破糾結均線"
+                },
+                {
+                    "StrategyID": "56",
+                    "StrategyName": "股價跌破均線"
+                },
+                {
+                    "StrategyID": "57",
+                    "StrategyName": "均線空頭排列"
+                },
+                {
+                    "StrategyID": "62",
+                    "StrategyName": "KD\n黃金交叉"
+                },
+                {
+                    "StrategyID": "63",
+                    "StrategyName": "MACD\n黃金交叉"
+                },
+                {
+                    "StrategyID": "64",
+                    "StrategyName": "RSI\n黃金交叉"
+                },
+                {
+                    "StrategyID": "65",
+                    "StrategyName": "KD\n死亡交叉"
+                },
+                {
+                    "StrategyID": "66",
+                    "StrategyName": "MACD\n死亡交叉"
+                },
+                {
+                    "StrategyID": "67",
+                    "StrategyName": "RSI\n死亡交叉"
+                },
+                {
+                    "StrategyID": "121",
+                    "StrategyName": "主力密集出貨股"
+                },
+                {
+                    "StrategyID": "141",
+                    "StrategyName": "短線多頭"
+                },
+                {
+                    "StrategyID": "143",
+                    "StrategyName": "短線空頭"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "165",
+                    "StrategyName": "近期法人籌碼優勢"
+                },
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                },
+                {
+                    "StrategyID": "167",
+                    "StrategyName": "KD指標優勢股"
+                }
+            ]
+        },
+        {
+            "StyleID": "10",
+            "StyleName": "躍龍門鯉魚",
+            "Title": "短期＿抓反彈＿多",
+            "Description": "相傳由於黃河渾濁，一般魚類不能存活，只有耐污的鯉魚生長十分適應。每到春季，這些鯉魚將會逆水上溯，並在龍門形成跳躍的群體，只為一登成龍。",
+            "Recommend": [
+                {
+                    "StrategyID": "145",
+                    "StrategyName": "多頭回檔"
+                },
+                {
+                    "StrategyID": "147",
+                    "StrategyName": "布林通道超賣"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                },
+                {
+                    "StrategyID": "167",
+                    "StrategyName": "KD指標優勢股"
+                }
+            ]
+        },
+        {
+            "StyleID": "11",
+            "StyleName": "瀑布鯉魚",
+            "Title": "短期＿抓反彈＿多",
+            "Description": "相傳由於黃河渾濁，一般魚類不能存活，只有耐污的鯉魚生長十分適應。每到春季，這些鯉魚將會逆水上溯，並在龍門形成跳躍的群體，只為一登成龍。",
+            "Recommend": [
+                {
+                    "StrategyID": "146",
+                    "StrategyName": "空頭反彈"
+                },
+                {
+                    "StrategyID": "148",
+                    "StrategyName": "布林通道超買"
+                }
+            ]
+        },
+        {
+            "StyleID": "12",
+            "StyleName": "成精鯉魚",
+            "Title": "短期＿抓反彈＿多空都做",
+            "Description": "相傳由於黃河渾濁，一般魚類不能存活，只有耐污的鯉魚生長十分適應。每到春季，這些鯉魚將會逆水上溯，並在龍門形成跳躍的群體，只為一登成龍。",
+            "Recommend": [
+                {
+                    "StrategyID": "145",
+                    "StrategyName": "多頭回檔"
+                },
+                {
+                    "StrategyID": "146",
+                    "StrategyName": "空頭反彈"
+                },
+                {
+                    "StrategyID": "147",
+                    "StrategyName": "布林通道超賣"
+                },
+                {
+                    "StrategyID": "148",
+                    "StrategyName": "布林通道超買"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                },
+                {
+                    "StrategyID": "167",
+                    "StrategyName": "KD指標優勢股"
+                }
+            ]
+        },
+        {
+            "StyleID": "13",
+            "StyleName": "潛水艇",
+            "Title": "短期＿找能填息成功的",
+            "Description": "您是股海中特異的裝置，目光獨到且冷血。在接收到只屬於自己的獨特聲碼之後，定期垂直上下。",
+            "Recommend": [
+                {
+                    "StrategyID": "164",
+                    "StrategyName": "高殖利率快速填息"
+                }
+            ]
+        },
+        {
+            "StyleID": "14",
+            "StyleName": "上游海龜",
+            "Title": "中期＿跟趨勢＿多",
+            "Description": "作為一個最長壽的物種，您已經在地球上生存超過一億年。當其他物種漸漸滅絕於股海時，只有您依然悠然自得。紀律！堅實！海龜交易法！",
+            "Recommend": [
+                {
+                    "StrategyID": "1",
+                    "StrategyName": "外資近日買超"
+                },
+                {
+                    "StrategyID": "2",
+                    "StrategyName": "投信近日買超"
+                },
+                {
+                    "StrategyID": "3",
+                    "StrategyName": "自營商\r\n近日買超"
+                },
+                {
+                    "StrategyID": "8",
+                    "StrategyName": "大股東持股比增加"
+                },
+                {
+                    "StrategyID": "9",
+                    "StrategyName": "主力密集收貨股"
+                },
+                {
+                    "StrategyID": "49",
+                    "StrategyName": "均線多頭排列"
+                },
+                {
+                    "StrategyID": "62",
+                    "StrategyName": "KD\n黃金交叉"
+                },
+                {
+                    "StrategyID": "63",
+                    "StrategyName": "MACD\n黃金交叉"
+                },
+                {
+                    "StrategyID": "64",
+                    "StrategyName": "RSI\n黃金交叉"
+                },
+                {
+                    "StrategyID": "142",
+                    "StrategyName": "長線多頭"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "165",
+                    "StrategyName": "近期法人籌碼優勢"
+                },
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                },
+                {
+                    "StrategyID": "167",
+                    "StrategyName": "KD指標優勢股"
+                }
+            ]
+        },
+        {
+            "StyleID": "15",
+            "StyleName": "下潛海龜",
+            "Title": "中期＿跟趨勢＿空",
+            "Description": "作為一個最長壽的物種，您已經在地球上生存超過一億年。當其他物種漸漸滅絕於股海時，只有您依然悠然自得。紀律！堅實！海龜交易法！",
+            "Recommend": [
+                {
+                    "StrategyID": "4",
+                    "StrategyName": "外資近日賣超"
+                },
+                {
+                    "StrategyID": "5",
+                    "StrategyName": "投信近日賣超"
+                },
+                {
+                    "StrategyID": "6",
+                    "StrategyName": "自營商\r\n近日賣超"
+                },
+                {
+                    "StrategyID": "9",
+                    "StrategyName": "主力密集收貨股"
+                },
+                {
+                    "StrategyID": "17",
+                    "StrategyName": "大股東持股比減少"
+                },
+                {
+                    "StrategyID": "57",
+                    "StrategyName": "均線空頭排列"
+                },
+                {
+                    "StrategyID": "65",
+                    "StrategyName": "KD\n死亡交叉"
+                },
+                {
+                    "StrategyID": "66",
+                    "StrategyName": "MACD\n死亡交叉"
+                },
+                {
+                    "StrategyID": "67",
+                    "StrategyName": "RSI\n死亡交叉"
+                },
+                {
+                    "StrategyID": "144",
+                    "StrategyName": "長線空頭"
+                }
+            ]
+        },
+        {
+            "StyleID": "16",
+            "StyleName": "很會的海龜",
+            "Title": "中期＿跟趨勢＿多空都做",
+            "Description": "作為一個最長壽的物種，您已經在地球上生存超過一億年。當其他物種漸漸滅絕於股海時，只有您依然悠然自得。紀律！堅實！海龜交易法！",
+            "Recommend": [
+                {
+                    "StrategyID": "1",
+                    "StrategyName": "外資近日買超"
+                },
+                {
+                    "StrategyID": "2",
+                    "StrategyName": "投信近日買超"
+                },
+                {
+                    "StrategyID": "3",
+                    "StrategyName": "自營商\r\n近日買超"
+                },
+                {
+                    "StrategyID": "4",
+                    "StrategyName": "外資近日賣超"
+                },
+                {
+                    "StrategyID": "5",
+                    "StrategyName": "投信近日賣超"
+                },
+                {
+                    "StrategyID": "6",
+                    "StrategyName": "自營商\r\n近日賣超"
+                },
+                {
+                    "StrategyID": "8",
+                    "StrategyName": "大股東持股比增加"
+                },
+                {
+                    "StrategyID": "9",
+                    "StrategyName": "主力密集收貨股"
+                },
+                {
+                    "StrategyID": "17",
+                    "StrategyName": "大股東持股比減少"
+                },
+                {
+                    "StrategyID": "49",
+                    "StrategyName": "均線多頭排列"
+                },
+                {
+                    "StrategyID": "57",
+                    "StrategyName": "均線空頭排列"
+                },
+                {
+                    "StrategyID": "62",
+                    "StrategyName": "KD\n黃金交叉"
+                },
+                {
+                    "StrategyID": "63",
+                    "StrategyName": "MACD\n黃金交叉"
+                },
+                {
+                    "StrategyID": "64",
+                    "StrategyName": "RSI\n黃金交叉"
+                },
+                {
+                    "StrategyID": "65",
+                    "StrategyName": "KD\n死亡交叉"
+                },
+                {
+                    "StrategyID": "66",
+                    "StrategyName": "MACD\n死亡交叉"
+                },
+                {
+                    "StrategyID": "67",
+                    "StrategyName": "RSI\n死亡交叉"
+                },
+                {
+                    "StrategyID": "142",
+                    "StrategyName": "長線多頭"
+                },
+                {
+                    "StrategyID": "144",
+                    "StrategyName": "長線空頭"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "165",
+                    "StrategyName": "近期法人籌碼優勢"
+                },
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                },
+                {
+                    "StrategyID": "167",
+                    "StrategyName": "KD指標優勢股"
+                }
+            ]
+        },
+        {
+            "StyleID": "17",
+            "StyleName": "逆流而上鮭魚",
+            "Title": "中期＿抓反彈＿多",
+            "Description": "就像是宿命的安排，鮭魚天生本能地堅持回到最初的地方產卵。無論中間的水流多麼的湍急，地形多麼的險峻，牠們都相信股價就跟人心一樣，終究會回歸故鄉。",
+            "Recommend": [
+                {
+                    "StrategyID": "145",
+                    "StrategyName": "多頭回檔"
+                },
+                {
+                    "StrategyID": "147",
+                    "StrategyName": "布林通道超賣"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "165",
+                    "StrategyName": "近期法人籌碼優勢"
+                },
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                }
+            ]
+        },
+        {
+            "StyleID": "18",
+            "StyleName": "跳瀑布鮭魚",
+            "Title": "中期＿抓反彈＿空",
+            "Description": "就像是宿命的安排，鮭魚天生本能地堅持回到最初的地方產卵。無論中間的水流多麼的湍急，地形多麼的險峻，牠們都相信股價就跟人心一樣，終究會回歸故鄉。",
+            "Recommend": [
+                {
+                    "StrategyID": "146",
+                    "StrategyName": "空頭反彈"
+                },
+                {
+                    "StrategyID": "148",
+                    "StrategyName": "布林通道超買"
+                }
+            ]
+        },
+        {
+            "StyleID": "19",
+            "StyleName": "成精鮭魚",
+            "Title": "中期＿抓反彈＿多空都做",
+            "Description": "就像是宿命的安排，鮭魚天生本能地堅持回到最初的地方產卵。無論中間的水流多麼的湍急，地形多麼的險峻，牠們都相信股價就跟人心一樣，終究會回歸故鄉。",
+            "Recommend": [
+                {
+                    "StrategyID": "145",
+                    "StrategyName": "多頭回檔"
+                },
+                {
+                    "StrategyID": "146",
+                    "StrategyName": "空頭反彈"
+                },
+                {
+                    "StrategyID": "147",
+                    "StrategyName": "布林通道超賣"
+                },
+                {
+                    "StrategyID": "148",
+                    "StrategyName": "布林通道超買"
+                }
+            ],
+            "FubanRecommend": [
+                {
+                    "StrategyID": "165",
+                    "StrategyName": "近期法人籌碼優勢"
+                },
+                {
+                    "StrategyID": "166",
+                    "StrategyName": "近期向上突破股"
+                }
+            ]
+        },
+        {
+            "StyleID": "20",
+            "StyleName": "飆車旗魚",
+            "Title": "長期＿成長股",
+            "Description": "您是股海中的衝刺選手，擁有能夠忍受劇烈跳動的心臟與永不停止追求巔峰的靈魂。堅信沒有最高，只有更高，沒有最快，只有更快的暴力哲學。",
+            "Recommend": [
+                {
+                    "StrategyID": "82",
+                    "StrategyName": "EPS年增率"
+                },
+                {
+                    "StrategyID": "99",
+                    "StrategyName": "華倫巴菲特"
+                },
+                {
+                    "StrategyID": "100",
+                    "StrategyName": "彼得林區"
+                },
+                {
+                    "StrategyID": "105",
+                    "StrategyName": "詹姆士\r\n歐沙那希"
+                },
+                {
+                    "StrategyID": "106",
+                    "StrategyName": "麥克墨菲"
+                },
+                {
+                    "StrategyID": "107",
+                    "StrategyName": "馬克\r\n約克奇"
+                },
+                {
+                    "StrategyID": "108",
+                    "StrategyName": "麥克喜偉"
+                },
+                {
+                    "StrategyID": "114",
+                    "StrategyName": "研發費用佔營收"
+                }
+            ]
+        },
+        {
+            "StyleID": "21",
+            "StyleName": "尋寶燈籠魚",
+            "Title": "長期＿價值股",
+            "Description": "尋寶燈籠魚,您提著一盞幽暗的燈，在誰都不在意的深海中翻箱倒櫃，忍受著巨大的水壓與極限的生存環境，近乎偏執地找尋那被眾人遺忘的璀璨寶藏。",
+            "Recommend": [
+                {
+                    "StrategyID": "94",
+                    "StrategyName": "股價\r\n淨值比"
+                },
+                {
+                    "StrategyID": "95",
+                    "StrategyName": "本益比"
+                },
+                {
+                    "StrategyID": "96",
+                    "StrategyName": "現金股利"
+                },
+                {
+                    "StrategyID": "97",
+                    "StrategyName": "現金\r\n殖利率"
+                },
+                {
+                    "StrategyID": "98",
+                    "StrategyName": "現金股利發放率"
+                },
+                {
+                    "StrategyID": "99",
+                    "StrategyName": "華倫巴菲特"
+                },
+                {
+                    "StrategyID": "102",
+                    "StrategyName": "二低一高價值股"
+                },
+                {
+                    "StrategyID": "104",
+                    "StrategyName": "班哲明\r\n格拉罕"
+                },
+                {
+                    "StrategyID": "119",
+                    "StrategyName": "股價\r\n營收比"
+                },
+                {
+                    "StrategyID": "120",
+                    "StrategyName": "股價\r\n研發比"
+                }
+            ]
+        },
+        {
+            "StyleID": "22",
+            "StyleName": "順水飄翻車魚",
+            "Title": "長期＿定存股",
+            "Description": "在一片滿是殺戮氣息的股海中，只有您懂得何謂生活而非只是生存，無論股海處於什麼樣的狂風暴雨，您總是順流飄蕩，嘴巴開開，財富自來",
+            "Recommend": [
+                {
+                    "StrategyID": "96",
+                    "StrategyName": "現金股利"
+                },
+                {
+                    "StrategyID": "97",
+                    "StrategyName": "現金\r\n殖利率"
+                },
+                {
+                    "StrategyID": "98",
+                    "StrategyName": "現金股利發放率"
+                },
+                {
+                    "StrategyID": "103",
+                    "StrategyName": "高股息\r\n定存股"
+                }
+            ]
+        }
+    ]
+}
