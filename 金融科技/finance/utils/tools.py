@@ -2,7 +2,7 @@ import os
 import itertools
 import statistics
 import numpy as np
-from typing import Dict, List, Tuple, Optional, Any, List, Sequence
+from typing import Dict, List, Tuple, Optional, Any, Sequence
 from concurrent.futures import ThreadPoolExecutor
 from statistics import mean, stdev
 from pathlib import Path
@@ -54,15 +54,26 @@ def select_factor(data: Dict[str, List[float]]) -> Tuple[List[List[float]], List
     return data_storage, id_storage, select_value
 
 
-def load_worksheet(inputs: str, output: str) -> Dict[str, Workbook]:
+def load_worksheet(inputs: str, output: str = None, element_id: List = None) -> Dict[str, Workbook]:
     
-    data_dict: Dict[str, Workbook] = {
-        v: openpyxl.load_workbook(os.path.join(inputs, f"{v}.xlsx"), data_only=True)
-        for v in ELEMENT_ID.values()
-    }
-    data_dict["IC"] = openpyxl.load_workbook(
-        output, data_only=True
-    )
+    if element_id is None:
+        if isinstance(ELEMENT_ID, dict):
+            data_dict: Dict[str, Workbook] = {
+                v: openpyxl.load_workbook(os.path.join(inputs, f"{v}.xlsx"), data_only=True)
+                for v in ELEMENT_ID.values()
+            }
+
+            data_dict["IC"] = openpyxl.load_workbook(
+                output, data_only=True
+            )
+    else:
+        if isinstance(element_id, list):
+            data_dict: Dict[str, Workbook] = {
+                v: openpyxl.load_workbook(os.path.join(inputs, f"{v}.xlsx"), data_only=True)
+                for v in element_id
+            }
+
+
     return data_dict
 
 
