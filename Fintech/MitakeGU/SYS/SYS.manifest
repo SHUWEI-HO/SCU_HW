@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity type="win32" name="SYS" version="1.0.0.0" processorArchitecture="x86"/>
+    <file name="mfc140u.dll"/>
+    <file name="msvcp140.dll"/>
+    <file name="ucrtbase.dll"/>
+	<file name="vcruntime140.dll"/>
+</assembly>
