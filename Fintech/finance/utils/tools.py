@@ -194,6 +194,66 @@ def r_square(real: List[List[float]], pred: List[List[float]]) -> List[List[floa
 
     return rs_rp.tolist() , rs_rr.tolist(), RS
 
+def classifier_store(
+    predict_cumulative_reward: List[List[List]], 
+    real_cumulative_reward: List[List],
+    market: List,
+    element_id: List,
+    output: Path,
+    date: List
+)-> None:
+    
+
+    # 創建新的工作表
+    wb = Workbook()
+    default_sheet = wb.active 
+    wb.remove(default_sheet)
+
+    select_dict = {0:10, 1:20, 2:50, 3:100, 8:192, 12:964}
+
+    # 不需要將13次的分類，只需要取10、20、50、100、192跟964的等分的篩選
+    for idx, (pcrs, rcr) in tqdm(enumerate(zip(zip(*predict_cumulative_reward), 
+                             real_cumulative_reward)),
+                             total=len(real_cumulative_reward),
+                             desc="將所有預測即真實累積報酬分類"):
+        
+        if idx in select_dict.keys():
+            
+            ws = wb.create_sheet(title=f'{select_dict[idx]}等分畫圖')
+
+            ws.merge_cells('A1:B1')
+            type_block(ws, '投資組合', 1, 1)
+            type_block(ws, '公司數', 1, 3)
+            type_block(ws, '964', 1, 4)
+            type_block(ws, f'{select_dict[idx]}等分', 2, 1)
+            type_block(ws, '時間', 2, 2)
+
+
+            storage(ws, [date], '填入時間', 2, 3, shape_vertical=True)
+            storage(ws, [element_id], '填入模型名稱', 3, 2)
+
+            type_block(ws, 'Real', 10, 2)
+            type_block(ws, '大盤', 11, 2)
+
+            for p_idx, pcr in enumerate(pcrs):
+                storage(ws, [pcr], f'填入{element_id[p_idx]}的{select_dict[idx]}等分', 3+p_idx, 3, shape_vertical=True)
+                fill_color(ws, 3, 3, 9, 136, color="FFFDE9D9")
+
+
+            storage(ws, [rcr], f"填入真實累積報酬的{select_dict[idx]}等分", 10, 3, shape_vertical=True)
+            fill_color(ws, 10, 3, 10, 136, color="FFDAEEF3")
+            storage(ws, [market], f"填入大盤累積報酬", 11, 3, shape_vertical=True)
+            fill_color(ws, 11, 3, 11, 136, color="FFDAEEF3")
+
+            modify_block(ws)
+
+        
+    wb.save(output)
+    
+
+        
+
+
 def data_store( file: Path, data: dict[str, Any], model: str) -> None:
 
     excel_data = openpyxl.load_workbook(file)

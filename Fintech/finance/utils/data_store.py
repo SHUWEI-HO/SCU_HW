@@ -155,9 +155,10 @@ def storage(
     shape_vertical: bool = False,
 ):
     if not shape_vertical:
-        for m_idx, elements in tqdm(
-            enumerate(results), total=len(results), desc=f"{work_name}"
-        ):
+        # for m_idx, elements in tqdm(
+        #     enumerate(results), total=len(results), desc=f"{work_name}"
+        # ):
+        for m_idx, elements in enumerate(results):
             for idx, element in enumerate(elements):
                 element = (
                     round(float(element), 8)
@@ -168,9 +169,10 @@ def storage(
                 cell.value = element
                 cell.font = Font(name="Calibri", size=12, bold=True)
     else:
-        for m_idx, elements in tqdm(
-            enumerate(results), total=len(results), desc=f"{work_name}"
-        ):
+        # for m_idx, elements in tqdm(
+        #     enumerate(results), total=len(results), desc=f"{work_name}"
+        # ):
+        for m_idx, elements in enumerate(results):
             for idx, element in enumerate(elements):
                 element = (
                     round(float(element), 8)
@@ -203,8 +205,7 @@ def modify_block(ws: Worksheet) -> None:
     ):
         for cell in row:
 
-            if cell.value not in (None, ""):
-
+            if cell.value not in (None, ""): 
                 cell.border = thick_border
                 new_font = copy(cell.font)
                 for attr in (

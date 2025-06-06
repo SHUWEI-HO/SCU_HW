@@ -1,8 +1,9 @@
 import openpyxl
 import argparse
 from pathlib import Path
+import os
 from typing import Dict, List, Tuple, Optional, Any, Sequence
-from utils.tools import load_worksheet, find_element, cumulative_reward
+from utils.tools import load_worksheet, find_element, cumulative_reward, classifier_store
 from tqdm import tqdm, trange
 
 ELEMENT_ID = ["OLS", "RF", "NN1", "NN2", "NN3", "NN4", "NN5"]
@@ -16,7 +17,7 @@ def get_parser() -> argparse.ArgumentParser:
 def main() -> None:
     args = get_parser()
     input_dir = args.input_dir
-    output = args.output
+    output = os.path.join(input_dir, args.output)
 
     data_dict = load_worksheet(inputs=input_dir, element_id=ELEMENT_ID)
 
@@ -26,6 +27,11 @@ def main() -> None:
     real_portfolio = [[list(real.values)[11+c_idx][2+r_idx]for c_idx in range(13)] for r_idx in range(134) ]
     real_cumulative_reward = cumulative_reward(real_portfolio)
 
+    # 提取時間
+    date = list(list(real.values)[10][2:136])
+
+
+
     # 讀取大盤
     mrow, mcol = find_element(real, "大盤")
     market = [
@@ -33,16 +39,23 @@ def main() -> None:
         for col_idx in trange(134, desc="讀取大盤")
     ]
 
-    rewards_dict = {}
+    rewards_dict = []
+
+    # 存取所有累積報酬
 
     for element in ELEMENT_ID:
         values = list(data_dict[element][f"{element}累積報酬"].values)
-        rewards_dict[element] = [[values[11+c_idx][2+r_idx]for r_idx in range(134)]for c_idx in range(13)]
+        rewards_dict.append([[values[11+c_idx][2+r_idx]for r_idx in range(134)]for c_idx in range(13)])
 
+
+    # 將每個模型跑出來的以等分做歸類
+
+    classifier_store(rewards_dict, real_cumulative_reward, market, ELEMENT_ID, output, date)
     
 
 
-    breakpoint()
+    
+
 
 
 
