@@ -20,9 +20,10 @@ def main() -> None:
     output = os.path.join(input_dir, args.output)
 
     data_dict = load_worksheet(inputs=input_dir, element_id=ELEMENT_ID)
+    real_data = openpyxl.load_workbook('../data/Real.xlsx', data_only=True)
 
     # 載入真實的投資組合    
-    real = data_dict["OLS"]["真實IC"]
+    real = real_data["預測IC"]
 
     real_portfolio = [[list(real.values)[11+c_idx][2+r_idx]for c_idx in range(13)] for r_idx in range(134) ]
     real_cumulative_reward = cumulative_reward(real_portfolio)

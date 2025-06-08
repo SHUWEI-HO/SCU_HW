@@ -1,5 +1,7 @@
 import os
 import itertools
+from itertools import accumulate
+import operator
 import statistics
 import numpy as np
 from typing import Dict, List, Tuple, Optional, Any, Sequence
@@ -11,7 +13,6 @@ from openpyxl.workbook.workbook import Workbook
 from openpyxl.worksheet.worksheet import Worksheet
 from tqdm import tqdm, trange
 from utils.data_store import copy_worksheet_range, copy_to_position, storage, modify_block, type_block, fill_color
-
 
 ELEMENT_ID: Dict[int, str] = {1: "bm", 2: "size", 3: "mom"}
 SPLIT_NUM: List[int] = [96, 48, 19, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
@@ -32,6 +33,36 @@ def find_element(
             col_pos = row_values.index(target) + 1
             break
     return row_pos, col_pos
+
+def find_company(input_dir: Path, id_storage: List) -> Tuple[List, List, List, List]:
+
+    data_dict = {idx: openpyxl.load_workbook(os.path.join(input_dir, f'{name}.xlsx'), data_only=True)[f'{name}補值'] 
+                   for idx, name in ELEMENT_ID.items()}
+    
+    max_records, min_records = [], []
+    max_companies, min_companies = [], []
+
+    for idx, value in tqdm(enumerate(id_storage), total=len(id_storage), desc='找出最大、最小因子'):
+        data = list(data_dict[value].values)
+        
+        data_start = [data[i][181+idx] for i in range(1, 964)] if value != 3 else [data[i][169+idx] for i in range(1, 964)]
+        max_data, min_data = max(data_start), min(data_start)
+        max_index, min_index = data_start.index(max_data), data_start.index(min_data)
+
+        max_company = data[max_index][1]
+        min_company = data[min_index][1]
+
+        max_id = data[max_index][0]
+        min_id = data[min_index][0]
+
+
+        max_records.append(max_id)
+        min_records.append(min_id)
+        max_companies.append(max_company)
+        min_companies.append(min_company)
+
+    return max_records, min_records, max_companies, min_companies
+
 
 
 def select_factor(data: Dict[str, List[float]]) -> Tuple[List[List[float]], List[int], List[float]]:
@@ -64,7 +95,7 @@ def load_worksheet(inputs: str, output: str = None, element_id: List = None) -> 
             }
 
             data_dict["IC"] = openpyxl.load_workbook(
-                output, data_only=True
+                '../data/IC.xlsx', data_only=True
             )
     else:
         if isinstance(element_id, list):
@@ -215,11 +246,12 @@ def classifier_store(
     for idx, (pcrs, rcr) in tqdm(enumerate(zip(zip(*predict_cumulative_reward), 
                              real_cumulative_reward)),
                              total=len(real_cumulative_reward),
-                             desc="將所有預測即真實累積報酬分類"):
+                             desc="將所有預測及真實累積報酬分類"):
         
         if idx in select_dict.keys():
             
-            ws = wb.create_sheet(title=f'{select_dict[idx]}等分畫圖')
+            title = f'{select_dict[idx]}等分畫圖'
+            ws = wb.create_sheet(title=title)
 
             ws.merge_cells('A1:B1')
             type_block(ws, '投資組合', 1, 1)
@@ -247,8 +279,36 @@ def classifier_store(
 
             modify_block(ws)
 
+
         
     wb.save(output)
+    
+def arr_cumulative(wb: Workbook, name: str, portfolio_data: List[List], market: List, inputs:Path) -> None:
+
+    arr_data = []
+    mk_data = []
+
+    ws = ensure_sheet(wb, f"{name}再投資累積報酬")
+
+    for participate_data in zip(*portfolio_data):
+
+        cumprod = np.cumprod(np.array(participate_data)+1) -1
+        arr_data.append(cumprod.tolist())
+    
+
+
+    type_block(ws, "TWII", 25, 1)
+    type_block(ws, "大盤", 25, 2)
+    copy_worksheet_range(wb["預測IC"], ws, 1, 24, 1, 136)
+    storage(ws, arr_data, f"將再投資累積報酬儲存至工作表->{name}再累積投資報酬", 12, 3, shape_vertical=True)
+    storage(ws, [market], f"將大盤再投資累積報酬儲存至工作表->{name}再累積投資報酬", 25, 3, shape_vertical=True)
+
+
+    modify_block(ws)
+    fill_color(ws, 25, 1, 25, 136, color="FFC6E0B4")
+
+    wb.save(os.path.join(inputs, f'{name}.xlsx'))
+    wb.close()
     
 
         
@@ -279,6 +339,13 @@ def data_store( file: Path, data: dict[str, Any], model: str) -> None:
     RR = data["RR_RS"]                                  # (真實)^2)
     RS = data["RS"]                                     # 整體樣本外R^2
 
+    XR = data["max_records"]                            # 篩選的最大值的公司號
+    NR = data["min_records"]                            # 篩選的最小值的公司號
+    XC = data["max_company"]                            # 篩選的最大值的公司
+    NC = data["min_company"]                            # 篩選的最小值的公司
+
+
+
     # 整合篩選因子的數據並儲存
     factors = [[i, ELEMENT_ID[i], sv] for i, sv in zip(ID, SV)]
 
@@ -286,6 +353,16 @@ def data_store( file: Path, data: dict[str, Any], model: str) -> None:
     storage(ws_ic, IC, "儲存IC至工作表->預測IC", 3, 3)
     storage(ws_ic, factors, "儲存篩選因子至工作表->預測IC", 6, 3)
     storage(ws_ic, PD, "儲存投資組合至工作表->預測IC", 12, 3)
+
+    type_block(ws_ic, "低", 27, 2)
+    type_block(ws_ic, "公司名稱", 28, 2)
+    type_block(ws_ic, "高", 29, 2)
+    type_block(ws_ic, "公司名稱", 30, 2)
+
+    storage(ws_ic, [NR],'儲存最小值的公司號', 27, 3, shape_vertical=True)
+    storage(ws_ic, [NC],'儲存最小值的公司號', 28, 3, shape_vertical=True)
+    storage(ws_ic, [XR],'儲存最大值的公司號', 29, 3, shape_vertical=True)
+    storage(ws_ic, [XC],'儲存最大值的公司號', 30, 3, shape_vertical=True)
 
     # 將以填入過的數據複製到其他工作表中，這樣就不需要在重複填上數據，不然會很亂
     copy_worksheet_range(ws_ic, ws_wr, 1, 26, 1, 136)
@@ -326,6 +403,10 @@ def data_store( file: Path, data: dict[str, Any], model: str) -> None:
     type_block(ws_r2, "R^2", 21, 1)
     type_block(ws_r2, RS, 21, 2)
 
+
+
+
+
     # 將所有的工作表有數據的部分都能擁有粗框線
     for ws in [ws_ic, ws_cr, ws_wr, ws_sp, ws_r2]:
         modify_block(ws)
@@ -334,3 +415,46 @@ def data_store( file: Path, data: dict[str, Any], model: str) -> None:
     excel_data.close()
 
     print("儲存成功!")
+
+def real_data_store(file: Path, wb: Workbook, data: Dict[str, Any]) -> None:
+
+    ws_ic = wb["預測IC"]
+    ws_wr = ensure_sheet(wb, "真實勝率")
+    ws_cr = ensure_sheet(wb, "真實累積報酬")
+    ws_sp = ensure_sheet(wb, "真實夏普比率")
+
+
+    PV = data["portfolio_value"]                        # 所有投資組合數據分類
+    TC = data["total_count"]                            # 所有勝過大盤的數據總數
+    WR = data["win_rate"]                               # 所有投資組合的勝率
+    CR = data["cumulative_rewards"]                     # 所有投資組合的累積報酬率
+    SP = data["sharpe_ratio"]                           # 夏普比率數據
+    SM = data["sharpe_ratio_market"]                    # 夏普比率數據(大盤)
+
+    copy_worksheet_range(ws_ic, ws_wr, 1, 26, 1, 136)
+    copy_worksheet_range(ws_ic, ws_cr, 1, 26, 1, 136)
+    copy_worksheet_range(ws_ic, ws_sp, 1, 26, 1, 136)
+    
+    type_block(ws_wr, "sum", 11, 137)
+    type_block(ws_wr, "勝率", 11, 138)
+    type_block(ws_sp, "平均值", 11, 137)
+    type_block(ws_sp, "標準差", 11, 138)
+    type_block(ws_sp, "夏普比率", 11, 139)
+
+    storage(ws_cr, CR, f"將各等分數累積報酬儲存至工作表->真實累積報酬", 12, 3, shape_vertical=True)
+
+
+    storage(ws_wr, PV, f"將投資組合評斷分數儲存至工作表->真實勝率", 12, 3)
+    storage(ws_wr, [TC], f"將各等分數勝過大盤總數儲存至工作表->真實勝率", 12, 137)
+    storage(ws_wr, [WR], f"將各等分勝率儲存至工作表->真實勝率", 12, 138)
+
+    storage(ws_sp, SP, f"將夏普比率儲存至工作表->真實夏普比率", 12, 137, shape_vertical=True)
+    storage(ws_sp, SM, f"將大盤的夏普比率儲存至工作表->真實夏普比率", 26, 137, shape_vertical=True)
+
+    for ws in [ws_ic, ws_cr, ws_wr, ws_sp]:
+        modify_block(ws)
+
+    
+
+    wb.save(file)
+    wb.close()
