@@ -10,7 +10,7 @@ def neural_network(input_dim):
     model = Sequential([
         Dense(32, activation="relu", input_dim=input_dim, 
               kernel_regularizer=regularizers.l1(1e-4)),
-        Dense(16, activation="relu"),
+        # Dense(16, activation="relu"),
         # Dense(8, activation="relu"),
         # Dense(4, activation="relu"),
         # Dense(2, activation="relu"),

@@ -187,9 +187,9 @@ def main() -> None:
 def get_parser() -> argparse.Namespace:
     p = argparse.ArgumentParser("金融投資策略")
     p.add_argument("--directory", default="../data/", help="資料資料夾")
-    p.add_argument("--save-file", default="NN2.xlsx", help="輸出檔名")
+    p.add_argument("--save-file", default="NN1.xlsx", help="輸出檔名")
     p.add_argument("--date", default="2013/12", help="起始日期")
-    p.add_argument("--range", nargs=2, default=[1, 2000], help="設置要跑的參數範圍")
+    p.add_argument("--range", nargs=2, default=[1, 1], help="設置要跑的參數範圍")
     p.add_argument(
         "--model", choices=["LR", "RF", "NN"], default="LR", help="選擇模型種類"
     )
