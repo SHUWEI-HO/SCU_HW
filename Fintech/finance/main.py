@@ -184,15 +184,6 @@ def main() -> None:
 
 
 
-
-
-
-
-
-
-
-
-
 def get_parser() -> argparse.Namespace:
     p = argparse.ArgumentParser("金融投資策略")
     p.add_argument("--directory", default="../data/", help="資料資料夾")

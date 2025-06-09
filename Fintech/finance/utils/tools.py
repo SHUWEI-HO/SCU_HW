@@ -354,15 +354,15 @@ def data_store( file: Path, data: dict[str, Any], model: str) -> None:
     storage(ws_ic, factors, "儲存篩選因子至工作表->預測IC", 6, 3)
     storage(ws_ic, PD, "儲存投資組合至工作表->預測IC", 12, 3)
 
-    type_block(ws_ic, "低", 27, 2)
-    type_block(ws_ic, "公司名稱", 28, 2)
-    type_block(ws_ic, "高", 29, 2)
-    type_block(ws_ic, "公司名稱", 30, 2)
+    type_block(ws_ic, "低", 28, 2)
+    type_block(ws_ic, "公司名稱", 29, 2)
+    type_block(ws_ic, "高", 30, 2)
+    type_block(ws_ic, "公司名稱", 31, 2)
 
-    storage(ws_ic, [NR],'儲存最小值的公司號', 27, 3, shape_vertical=True)
-    storage(ws_ic, [NC],'儲存最小值的公司號', 28, 3, shape_vertical=True)
-    storage(ws_ic, [XR],'儲存最大值的公司號', 29, 3, shape_vertical=True)
-    storage(ws_ic, [XC],'儲存最大值的公司號', 30, 3, shape_vertical=True)
+    storage(ws_ic, [NR],'儲存最小值的公司號', 28, 3, shape_vertical=True)
+    storage(ws_ic, [NC],'儲存最小值的公司號', 29, 3, shape_vertical=True)
+    storage(ws_ic, [XR],'儲存最大值的公司號', 30, 3, shape_vertical=True)
+    storage(ws_ic, [XC],'儲存最大值的公司號', 31, 3, shape_vertical=True)
 
     # 將以填入過的數據複製到其他工作表中，這樣就不需要在重複填上數據，不然會很亂
     copy_worksheet_range(ws_ic, ws_wr, 1, 26, 1, 136)
